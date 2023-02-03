@@ -59,7 +59,7 @@ ui <- fluidPage(
           "Colorado" = "CO",
           "Connecticut" = "CT",
           "Delaware" = "DE",
-          "Flordia" = "FL",
+          "Florida" = "FL",
           "Hawaii" = "HI",
           "Idaho" = "ID",
           "Illinois" = "IL",
@@ -135,6 +135,13 @@ server <- function(input, output) {
       temp_data <- read_delim(input_data_path, 
                               delim = "\t", escape_double = FALSE, 
                               trim_ws = TRUE)
+      
+    }
+    
+    else if (state_fin == "MT") {
+      
+      temp_data <- read_delim(input_data_path, 
+                 delim = "|", escape_double = FALSE, trim_ws = TRUE)
       
     }
     
@@ -294,13 +301,16 @@ server <- function(input, output) {
     
     else if (state_fin == "DE"){
       
-      temp_data <- temp_data %>% rename("full_name" = "Contributor_Name",
-                                        "addr1" = "Contributor_Address_Line_1",
-                                        "donation_amount" = "Contribution_Amount",
-                                        "donation_date" = "Contribution_Date",
-                                        "state" = "Contributor_State",
-                                        "city" = "Contributor_City",
-                                        "zip" = "Contributor_Zip")
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("full_name" = "contributor_name",
+                                        "addr1" = "contributor_address_line_1",
+                                        "addr2" = "contributor_address_line_2",
+                                        "donation_amount" = "contribution_amount",
+                                        "donation_date" = "contribution_date",
+                                        "state" = "contributor_state",
+                                        "city" = "contributor_city",
+                                        "zip" = "contributor_zip")
       
       temp_data <- temp_data %>% add_column("full_address" = '',
                                             "first_name" = '',
@@ -310,7 +320,6 @@ server <- function(input, output) {
                                             "phone2" = '',
                                             "email1" = '',
                                             "email2" = '',
-                                            "addr2" = ''
       )
     }
     
@@ -622,50 +631,58 @@ server <- function(input, output) {
     
     else if (state_fin == "MT"){
       
-      temp_data <- temp_data %>% rename("first_name" = "First_Name",
-                                        "last_name" = "Last_Name",
-                                        "middle_name" = 'Middle_Initial',
-                                        "addr1" = "Addr_Line1",
-                                        "donation_amount" = "Amount",
-                                        "donation_date" = "Date_Paid",
-                                        "state" = "State",
-                                        "city" = "City",
-                                        "zip" = "Zip")
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("full_name" = "contributor_name", 
+                                        "addr1" = "contributor_address",
+                                        "donation_amount" = "amount",
+                                        "donation_date" = "date_paid")
       
       temp_data <- temp_data %>% add_column("full_address" = '',
-                                            "full_name" = '',
                                             "phone1" = '',
                                             "phone2" = '',
                                             "email1" = '',
                                             "email2" = '',
-                                            "addr2" = ''
+                                            "addr2" = '',
+                                            "first_name" = '',
+                                            "middle_name" = '',
+                                            "last_name" = '',
       )
       
-      temp_data <- temp_data %>% mutate(full_name = ifelse(first_name == '', Entity_Name, ''))
+      temp_data <- temp_data %>% 
+        separate("contributor_city_state_zip", c("city", "state"), sep = " ") %>% 
+        mutate(zip = str_extract(state, '\\d{5}')) %>% 
+        mutate(state = word(state, 1, sep = " "))
+      
     }
     
     else if (state_fin == "ME"){
       
       temp_data <- temp_data %>% clean_names()
       
-      temp_data <- temp_data %>% rename("first_name" = "receipt_amount",
-                                        "last_name" = "receipt_amount",
-                                        "addr1" = "address1",
-                                        "addr2" = "address2",
-                                        "donation_amount" = "receipt_amount",
-                                        "donation_date" = "receipt_date",
-                                        "state" = "state",
-                                        "city" = "city",
-                                        "zip" = "zip")
+      temp_data <- temp_data %>% rename("full_name" = "contributor",
+                                        "full_address" = "address",
+                                        "donation_amount" = "amount",
+                                        "donation_date" = "date")
       
-      temp_data <- temp_data %>% add_column("full_address" = '',
-                                            "full_name" = '',
-                                            "phone1" = '',
+      temp_data <- temp_data %>% add_column("phone1" = '',
                                             "phone2" = '',
                                             "email1" = '',
-                                            "email2" = ''
+                                            "email2" = '',
+                                            "first_name" = '',
+                                            "last_name" = '',
+                                            "middle_name" = '',
+                                            "addr1" = '',
+                                            "addr2" = ''
       )
-      temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
+
+      temp_data <- temp_data %>% 
+        mutate(donation_amount = gsub("\\$", "", donation_amount)) %>%
+        mutate(zip = str_extract(full_address, '\\d{5}')) %>% 
+        mutate(state = str_extract(word(full_address, -1, sep = ","), "[A-Z]+")) %>% 
+        mutate(city = word(full_address, -2, sep = ",")) %>% 
+        mutate(full_address = word(full_address, 1, sep = ","))
+      
       
     }
     
@@ -697,25 +714,29 @@ server <- function(input, output) {
     
     else if (state_fin == "ND"){
       
-      temp_data <- temp_data %>% rename("full_name" = "Name",
-                                        "addr1" = "AddressStreet",
-                                        "addr2" = "AddressStreet2",
+      temp_data <- temp_data %>% rename("full_name" = "Contributor",
+                                        "addr1" = "Street",
                                         "donation_amount" = "Amount",
-                                        "donation_date" = "TransactionDate",
-                                        "state" = "AddressStateID",
-                                        "city" = "AddressCity",
-                                        "zip" = "AddressZip")
+                                        "donation_date" = "Date",
+                                        "state" = "State",
+                                        "city" = "City",
+                                        "zip" = "Zip")
       
       temp_data <- temp_data %>% add_column("full_address" = '',
                                             "phone1" = '',
                                             "phone2" = '',
+                                            "addr2" = '',
                                             "email1" = '',
                                             "email2" = '',
                                             "first_name" = '',
                                             "last_name" = '',
                                             "middle_name" = ''
       )
-      temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
+      
+      temp_data <- temp_data %>% 
+        mutate(donation_amount = as.numeric(gsub("\\$|,", "", donation_amount))) %>% 
+        mutate(full_name = gsub(",", "", full_name)) %>% 
+        mutate(full_name = ifelse(full_name == "", "Null", full_name))
       
     }
     
@@ -889,34 +910,23 @@ server <- function(input, output) {
       
       temp_data <- temp_data %>% clean_names()
       
-      temp_data <- temp_data %>% rename("first_name" = "first_name",
-                                        "last_name" = "last_name",
-                                        "middle_name" = "middle_name",
+      temp_data <- temp_data %>% rename("first_name" = "contributor_first_name",
+                                        "last_name" = "contributor_last_name",
+                                        "middle_name" = "contributor_middle_name",
+                                        "full_name" = "contributor_non_individual",
                                         "full_address" = "address",
                                         "donation_amount" = "amount",
-                                        "donation_date" = "contribution_date",
-                                        "state" = "state",
-                                        "city" = "city",
-                                        "zip" = "zip")
+                                        "donation_date" = "contribution_date")
       
       temp_data <- temp_data %>% add_column("phone1" = '',
                                             "phone2" = '',
                                             "email1" = '',
                                             "email2" = '',
-                                            "full_name" = '',
                                             "addr1" = '',
                                             "addr2" = '',
       )
       
       temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
-      temp_data <- temp_data %>% filter(full_address != '')
-      temp_data <- temp_data %>% filter(nchar(first_name) > 2)
-      temp_data <- temp_data %>% filter(nchar(zip) == 5) %>% #these transforms probably don't matter for Ohio specifically
-        mutate(first_name = gsub("&|\\.", '', first_name)) %>% 
-        mutate(middle_name = '') %>% 
-        mutate(first_name = str_to_title(first_name)) %>% 
-        mutate(last_name = str_to_title(last_name)) %>% 
-        mutate(city = str_to_title(city))
       
     }
     
@@ -1110,9 +1120,15 @@ server <- function(input, output) {
                                             "addr1" = '', 
                                             "addr2" = '',
                                             "zip" = ''
-      )
+      ) 
       
-      temp_data <- temp_data %>% mutate(donation_date = mdy_hm(donation_date,tz=Sys.timezone()))
+      temp_data <- temp_data %>% 
+        mutate(state = gsub(",", "", state)) %>% 
+        mutate(zip = str_extract(full_address, '\\d{5}')) %>% 
+        mutate(state = word(full_address, -1, sep = ",")) %>% 
+        mutate(state = str_extract(state, "[A-Z]+")) %>%
+        mutate(city = word(full_address, -2, sep = ",")) %>% 
+        mutate(full_address = word(full_address, 1, -4, sep = ","))
       
     }
     
@@ -1185,7 +1201,7 @@ server <- function(input, output) {
     
     req(input$donorfile)
     
-    if (input$state == "NC" | input$state == "NM"){  
+    if (input$state == "NC" | input$state == "NM" | input$state == "WV"){  
     
     df <- read_csv(input$donorfile$datapath, skip = 1)
     
@@ -1199,9 +1215,12 @@ server <- function(input, output) {
       
     }
     
-    else if (input$state == "WV")
+    else if (input$state == "MT") {
       
-      df <- read_csv(input$donorfile$datapath, skip = 1)
+      df <- read_delim(input$donorfile$datapath, 
+                              delim = "|", escape_double = FALSE, trim_ws = TRUE)
+      
+    }
     
     else {
       
