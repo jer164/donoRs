@@ -108,19 +108,25 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  # Output table for the selected dataset ----
+  
   
   donor_cleaner <- function(input_data_path, state_fin){
+    
+    ### Collect ABBA-friendly names
     
     good_names <- c("donation_date", "donation_amount",	"full_name", "addr1", 
                     "city",	"state","zip", "full_address", "first_name", "middle_name",	
                     "last_name", "addr2",	"phone1",	"phone2",	"email1",	"email2")
+    
+    ### These states have a non-tabular first row
     
     if (state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
       
       temp_data <- read_csv(input_data_path, skip = 1) %>% as_tibble()
       
     }
+    
+    ### These states use .TXT files
     
     else if (state_fin == "MA" | state_fin == "MI"){
       
@@ -129,6 +135,8 @@ server <- function(input, output) {
                               trim_ws = TRUE)
       
     }
+    
+    ### These states use standard .CSVs
     
     else {
       temp_data <- read_csv(input_data_path) %>% as_tibble()
