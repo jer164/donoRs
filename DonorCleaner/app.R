@@ -138,6 +138,8 @@ server <- function(input, output) {
       
     }
     
+    ### Montana has, for some reason, |-delimited data
+    
     else if (state_fin == "MT") {
       
       temp_data <- read_delim(input_data_path, 
