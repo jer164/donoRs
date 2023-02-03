@@ -138,8 +138,6 @@ server <- function(input, output) {
       
     }
     
-    ### Montana has, for some reason, |-delimited data
-    
     else if (state_fin == "MT") {
       
       temp_data <- read_delim(input_data_path, 
@@ -397,24 +395,31 @@ server <- function(input, output) {
     
     else if (state_fin == "IA"){
       
-      temp_data <- temp_data %>% rename("first_name" = "First_Name",
-                                        "last_name" = "Last_Name",
-                                        "addr1" = "Address_Line_1",
-                                        "donation_amount" = "Contribution_Amount",
-                                        "donation_date" = "Date",
-                                        "state" = "State",
-                                        "city" = "City",
-                                        "zip" = "Zip_Code")
+      temp_data <- temp_data %>% clean_names()
+      
+      
+      temp_data <- temp_data %>% rename("full_name" = "contributed_by_name",
+                                        "addr1" = "contributed_by_address1",
+                                        "addr2" = "contributed_by_address2", 
+                                        "donation_amount" = "amount",
+                                        "donation_date" = "date",
+                                        "city" = "contributed_by_city",
+                                        "state" = "contributed_by_state",
+                                        "zip" = "contributed_by_zip")
       
       temp_data <- temp_data %>% add_column("full_address" = '',
-                                            "full_name" = '',
                                             "middle_name" = '',
                                             "phone1" = '',
                                             "phone2" = '',
                                             "email1" = '',
                                             "email2" = '',
-                                            "addr2" = ''
+                                            "first_name" = '',
+                                            "last_name" = ''
       )
+      
+      temp_data <- temp_data %>% 
+        mutate(donation_amount = gsub("\\$", "", donation_amount))
+      
     }
     
     else if (state_fin == "IN"){
