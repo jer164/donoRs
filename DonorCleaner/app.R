@@ -50,8 +50,10 @@ ui <- fluidPage(
       
       selectInput(
         'state',
-        'State:',
-        c("Alabama" = "AL",
+        'Source:',
+        list(`National` = list("FEC" = "FEC"),
+             `City` = list("New York City" = "NYC"),
+          `State` = list("Alabama" = "AL",
           "Alaska" = "AK",
           "California" = "CA",
           "Colorado" = "CO",
@@ -85,7 +87,7 @@ ui <- fluidPage(
           "Utah" = "UT",
           "Vermont" = "VT",
           "West Virginia" = "WV",
-          "Wisconsin" = "WI"),
+          "Wisconsin" = "WI")),
         selected = "Alabama",
       ),
       
@@ -310,6 +312,32 @@ server <- function(input, output) {
                                             "email2" = '',
                                             "addr2" = ''
       )
+    }
+    
+    else if (state_fin == "FEC"){
+      
+      temp_data <- temp_data %>% rename("first_name" = 'contributor_first_name',
+                                        "middle_name" = 'contributor_middle_name',
+                                        "last_name" = 'contributor_last_name',
+                                        "addr1" = "contributor_street_1",
+                                        "addr2" = "contributor_street_2",
+                                        "donation_amount" = "contribution_receipt_amount",
+                                        "donation_date" = "contribution_receipt_date",
+                                        "state" = "contributor_state",
+                                        "city" = "contributor_city",
+                                        "zip" = "contributor_zip",)
+      
+      temp_data <- temp_data %>% add_column("full_address" = '',
+                                            "phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "full_name" = ''
+      )
+      
+      temp_data <- temp_data %>% 
+        mutate(donation_date = gsub("-", "/", donation_date))
+      
     }
     
     else if (state_fin == "FL"){
@@ -775,7 +803,32 @@ server <- function(input, output) {
         mutate(zip = ifelse(is.na(zip) == TRUE, word(full_address, -1, sep = ","), zip)) %>% 
         mutate(full_address = '')
         
-  }
+    }
+    
+    else if (state_fin == "NYC"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("full_name" = "name",
+                                        "full_address" = "strname",
+                                        "donation_amount" = "amnt",
+                                        "donation_date" = "date")
+      
+      temp_data <- temp_data %>% add_column("addr1" = '',
+                                            "addr2" = '',
+                                            "phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "first_name" = '',
+                                            "last_name" = '',
+                                            "middle_name" = ''
+      )
+      
+      temp_data <- temp_data %>% 
+        mutate(full_address = replace_na("NULL"))
+      
+    }
     
     else if (state_fin == "NY"){
       
