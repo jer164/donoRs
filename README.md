@@ -2,7 +2,7 @@
 
 This app is designed to format .CSVs downloaded from state campaign finance sites. For it to work properly, it needs to receive **unaltered** files downloaded directly from the campaign sites. It is also still in *early* development, so errors will likely crop up. Please DM me on Slack or email me at jackson.rudoff@applecart.co.
 
-## Usage
+## Using the Site
 
 Using this tool is fairly straightforward.
 
