@@ -87,13 +87,15 @@ ui <- fluidPage(
           "Utah" = "UT",
           "Vermont" = "VT",
           "West Virginia" = "WV",
-          "Wisconsin" = "WI")),
+          "Wisconsin" = "WI",
+          "Wyoming" = "WY")),
         selected = "Alabama",
       ),
       
       # Button
-      downloadButton("downloadData", "Download")
+      downloadButton("downloadData", "Download"),
       
+      tags$a(href="https://jer164.github.io/donoRs/", "User Guide", target = "_blank")
       
     ),
       
@@ -1189,6 +1191,36 @@ server <- function(input, output) {
         mutate(city = word(full_address, -3, sep = ",")) %>% 
         mutate(full_address = word(full_address, 1, -4, sep = ","))
       
+      
+    }
+    
+    else if (state_fin == "WY"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("full_name" = "contributor_name",
+                                        "donation_amount" = "amount",
+                                        "donation_date" = "date",
+                                        "full_address" = "city_state_zip")
+      
+      temp_data <- temp_data %>% add_column("phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "first_name" = '',
+                                            "last_name" = '',
+                                            "middle_name" = '',
+                                            "addr1" = '',
+                                            "addr2" = ''
+      )
+      
+      temp_data <- temp_data %>% 
+        mutate(city = word(full_address, 1, sep = ",")) %>% 
+        mutate(zip = str_extract(full_address, '\\d{5}')) %>% 
+        mutate(state = word(full_address, 2, sep = ",")) %>% 
+        mutate(state = str_extract(state, '[A-Za-z]')) %>% 
+        mutate(full_name = gsub("\\([A-Za-z]+\\)", "", full_name)) %>% 
+        mutate(full_address = 'NULL')
       
     }
     
