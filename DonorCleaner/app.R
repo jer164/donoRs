@@ -38,7 +38,7 @@ ui <- fluidPage(
       
       
       # Input: Select a file ----
-      fileInput("donorfile", "Choose .CSV Donor File",
+      fileInput("donorfile", "Choose .CSV or .TXT Donor File",
                 multiple = TRUE,
                 accept = c("text/csv",
                            "text/comma-separated-values,text/plain",
@@ -52,7 +52,9 @@ ui <- fluidPage(
         'state',
         'Source:',
         list(`National` = list("FEC" = "FEC"),
-             `City` = list("New York City" = "NYC"),
+             `City` = list("Atlanta" = "ATL",
+                           "Los Angeles" = "LA_C",
+                           "New York City" = "NYC"),
           `State` = list("Alabama" = "AL",
           "Alaska" = "AK",
           "California" = "CA",
@@ -60,6 +62,7 @@ ui <- fluidPage(
           "Connecticut" = "CT",
           "Delaware" = "DE",
           "Florida" = "FL",
+          "Georgia" = "GA",
           "Hawaii" = "HI",
           "Idaho" = "ID",
           "Illinois" = "IL",
@@ -124,7 +127,7 @@ server <- function(input, output) {
     
     ### These states have a non-tabular first row
     
-    if (state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
+    if (state_fin == "GA" | state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
       
       temp_data <- read_csv(input_data_path, skip = 1) %>% as_tibble()
       
@@ -200,6 +203,32 @@ server <- function(input, output) {
         separate("CityState", c("city", "state"), sep = ",") %>% 
         mutate(full_address = "NULL")
       
+    }
+    
+    else if (state_fin == "ATL"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("donation_amount" = "amount",
+                                        "donation_date" = "date",
+                                        "full_address" = "contributor_address")
+      
+      temp_data <- temp_data %>% add_column("middle_name" = '',
+                                            "phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "addr1" = '',
+                                            "addr2" = '',
+                                            "full_name" = ''
+      )
+      
+      temp_data <- temp_data %>% 
+        mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
+        mutate(city = word(full_address, 1, sep = " ")) %>% 
+        mutate(state = word(full_address, 2, sep = " ")) %>% 
+        mutate(zip = word(full_address, 3, sep = " ")) %>% 
+        mutate(full_address = "NULL")
     }
     
     else if (state_fin == "AK"){
@@ -373,6 +402,36 @@ server <- function(input, output) {
       )
     }
     
+    else if (state_fin == "GA"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("full_name" = "contributor_payee",
+                                        "donation_amount" = "contribution_amount",
+                                        "donation_date" = "transaction_date")
+      
+      temp_data <- temp_data %>% add_column("middle_name" = '',
+                                            "phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "first_name" = '',
+                                            "last_name" = '',
+                                            "addr2" = '',
+                                            "full_address" = ''
+      )
+      
+      temp_data <- temp_data %>% 
+        mutate(addr1 = word(contributor_address, 1, sep = ",,|,")) %>% 
+        mutate(city = word(contributor_address, 2, sep = ",,|,")) %>% 
+        mutate(state = word(contributor_address, 3, sep = ",,|,")) %>% 
+        mutate(zip = str_extract(contributor_address, "\\d{5}")) %>% 
+        mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
+        mutate(city = ifelse(str_detect(city, "\\d+") == TRUE, 'NULL', city))
+        
+      
+    }
+    
     else if (state_fin == "HI"){
       
       temp_data <- temp_data %>% clean_names()
@@ -521,6 +580,31 @@ server <- function(input, output) {
                                             "email2" = ''
       )
       temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
+      
+    }
+    
+    else if (state_fin == "LA_C"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename("first_name" = "contributor_first_name",
+                                        "last_name" = "contributor_last_business_name" ,
+                                        "donation_amount" = "amount_received",
+                                        "donation_date" = "contribution_date",
+                                        "city" = "contributor_city",
+                                        "state" = "contributor_state",
+                                        "zip" = "contributor_zip")
+      
+      temp_data <- temp_data %>% add_column("middle_name" = '',
+                                            "phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "addr1" = '',
+                                            "addr2" = '',
+                                            "full_name" = '',
+                                            "full_address" = 'NULL'
+      )
       
     }
     
