@@ -6,7 +6,7 @@ This app is designed to format .CSVs and .TXTs downloaded from state campaign fi
 
 Using this tool is fairly straightforward.
 
-1\. Click ```Browse``` and select unaltered donor file downloaded from a state campaign site. It should be structured as a list of **contributions**. 
+1\. Click ```Browse``` and select unaltered an donor file downloaded from a state campaign site. It should be structured as a list of **contributions** to a specific candidate.
 
 2\. After the file has uploaded, select the correct state from the dropdown menu. You will know it has worked if a table outputs to the right of the upload panel. If it does not do this, then there is an issue with the file's formatting. *Please feel free to message me if this happens.* 
 
@@ -18,3 +18,8 @@ If it has worked correctly, your screen should look like this:
 
 4\. Done!
 
+## In Progress
+
+1. Adding a list of correct search portals (some campaign sites have multiple).
+2. Adding states with weird formats.
+3. Figuring out which states that have direct API access.
