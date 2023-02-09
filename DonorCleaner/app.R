@@ -563,8 +563,11 @@ server <- function(input, output) {
                                             "phone2" = '',
                                             "email1" = '',
                                             "email2" = '',
-                                            "full_name" = '',
-                                            "full_address" = ''
+                                            "full_address" = '',
+                                            "first_name" = '',
+                                            "middle_name" = '',
+                                            "last_name" = '',
+                                            "addr2" = ''
       ) 
       
       temp_data <- temp_data %>% 

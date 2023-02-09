@@ -47,5 +47,7 @@ def kansas(input_path):
     donors_df['zip'] = zips
     donors_df['donation_date'] = dates
     donors_df['donation_amount'] = [s.lstrip("$") for s in amounts]
+    
+    donors_df = donors_df.drop_duplicates(subset=["full_name"], keep="first")
 
     return donors_df
