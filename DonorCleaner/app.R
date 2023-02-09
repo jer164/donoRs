@@ -40,7 +40,7 @@ ui <- fluidPage(
       
       
       # Input: Select a file ----
-      fileInput("donorfile", "Choose .CSV or .TXT Donor File",
+      fileInput("donorfile", "Select a .csv, .txt, .xml, or .html Donor File",
                 multiple = TRUE,
                 accept = c("text/csv",
                            "text/comma-separated-values,text/plain",
@@ -135,7 +135,7 @@ server <- function(input, output) {
                     "city",	"state","zip", "full_address", "first_name", "middle_name",	
                     "last_name", "addr2",	"phone1",	"phone2",	"email1",	"email2")
     
-    ### These states have a non-tabular first row
+    ### These states have dumb and broken data formats
     
     if (state_fin == "VA"){
       
@@ -148,6 +148,7 @@ server <- function(input, output) {
       temp_data <- kansas(input_data_path) %>% as_tibble()
       
     }
+    ### These states have a non-tabular first row
     
     else if (state_fin == "GA" | state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
       
