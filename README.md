@@ -2,6 +2,13 @@
 
 This app is designed to format .CSVs and .TXTs downloaded from state campaign finance sites. For it to work properly, it needs to receive **unaltered** files downloaded directly from the campaign sites. It is also still in *early* development, so errors will likely crop up. Please DM me on Slack or email me at jackson.rudoff@applecart.co with any comments, concerns, or error reports!
 
+
+## File Types 
+
+Kansas: .html (**NOTE**: These files download as `.xls` files. You have to manually change the file extension to `.html`.
+Virginia: .xml
+Massachusetts, Michigan, Montana: .txt
+
 ## Using the Site
 
 Using this tool is fairly straightforward.
