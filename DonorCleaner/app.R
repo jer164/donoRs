@@ -13,6 +13,8 @@ library(lubridate)
 library(janitor)
 library(stringr)
 library(DT)
+library(reticulate)
+library(XML)
 
 ### options
 
@@ -42,7 +44,8 @@ ui <- fluidPage(
                 multiple = TRUE,
                 accept = c("text/csv",
                            "text/comma-separated-values,text/plain",
-                           ".csv")),
+                           ".csv",
+                           ".xml")),
       
       htmlOutput("donorsize"),
       # Horizontal line ----
@@ -88,6 +91,7 @@ ui <- fluidPage(
           "South Carolina" = "SC",
           "Tennessee" = "TN",
           "Utah" = "UT",
+          "Virginia" = "VA",
           "Vermont" = "VT",
           "West Virginia" = "WV",
           "Wisconsin" = "WI",
@@ -115,7 +119,10 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  
+  virtualenv_create(envname = "python_environment", python= "python3")
+  virtualenv_install("python_environment", packages = c('pandas', 'lxml'))
+  reticulate::use_virtualenv("python_environment", required = TRUE)
+  reticulate::source_python("virginia.py", convert = TRUE)
   
   donor_cleaner <- function(input_data_path, state_fin){
     
@@ -127,7 +134,13 @@ server <- function(input, output) {
     
     ### These states have a non-tabular first row
     
-    if (state_fin == "GA" | state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
+    if (state_fin == "VA"){
+      
+      temp_data <- virginia(input_data_path) %>% as_tibble()
+      
+    }
+    
+    else if (state_fin == "GA" | state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
       
       temp_data <- read_csv(input_data_path, skip = 1) %>% as_tibble()
       
@@ -425,7 +438,7 @@ server <- function(input, output) {
         mutate(addr1 = word(contributor_address, 1, sep = ",,|,")) %>% 
         mutate(city = word(contributor_address, 2, sep = ",,|,")) %>% 
         mutate(state = word(contributor_address, 3, sep = ",,|,")) %>% 
-        mutate(zip = str_extract(contributor_address, "\\d{5}")) %>% 
+        mutate(zip = str_extract(contributor_addressPD, "\\d{5}")) %>% 
         mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
         mutate(city = ifelse(str_detect(city, "\\d+") == TRUE, 'NULL', city))
         
@@ -1191,6 +1204,32 @@ server <- function(input, output) {
       
     }
     
+    else if (state_fin == "VA"){
+      
+      temp_data <- temp_data %>% clean_names()
+      
+      
+      temp_data <- temp_data %>% rename("addr1" = "line1",
+                                        "addr2" = "line2",
+                                        "donation_amount" = "amount",
+                                        "donation_date" = "transaction_date",
+                                        "state" = "state",
+                                        "city" = "city",
+                                        "zip" = "zip_code")
+      
+      temp_data <- temp_data %>% add_column("phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "full_name" = '',
+                                            "full_address" = ''
+      ) 
+      
+      temp_data <- temp_data %>% 
+        mutate_if(is.list, as.character)
+      
+    }
+    
     else if (state_fin == "VT"){
       
       temp_data <- temp_data %>% clean_names()
@@ -1324,7 +1363,13 @@ server <- function(input, output) {
     
     req(input$donorfile)
     
-    if (input$state == "NC" | input$state == "NM" | input$state == "WV"){  
+    if (input$state == "VA"){
+      
+    df <- virginia(input$donorfile$datapath) %>% as_tibble() 
+      
+    }
+    
+    else if (input$state == "NC" | input$state == "NM" | input$state == "WV"){  
     
     df <- read_csv(input$donorfile$datapath, skip = 1)
     
@@ -1363,7 +1408,7 @@ server <- function(input, output) {
 ###### Create download
   output$downloadData <- downloadHandler(
     filename = function() {
-      paste(input$state, ".csv", sep = "")
+      paste(input$state, ".csv", sep = "") 
     },
     content = function(file) {
       write.csv(datasetInput(), file, row.names = FALSE, na = "")
