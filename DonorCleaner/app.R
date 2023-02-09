@@ -45,7 +45,8 @@ ui <- fluidPage(
                 accept = c("text/csv",
                            "text/comma-separated-values,text/plain",
                            ".csv",
-                           ".xml")),
+                           ".xml",
+                           ".html")),
       
       htmlOutput("donorsize"),
       # Horizontal line ----
@@ -71,6 +72,7 @@ ui <- fluidPage(
           "Illinois" = "IL",
           "Indiana" = "IN",
           "Iowa" = "IA",
+          "Kansas" = "KS",
           "Kentucky" = "KY",
           "Louisiana" = "LA",
           "Maine" = "ME",
@@ -120,9 +122,10 @@ ui <- fluidPage(
 server <- function(input, output) {
   
   virtualenv_create(envname = "python_environment", python= "python3")
-  virtualenv_install("python_environment", packages = c('pandas', 'lxml'))
+  virtualenv_install("python_environment", packages = c('pandas', 'lxml', 'bs4'))
   reticulate::use_virtualenv("python_environment", required = TRUE)
   reticulate::source_python("virginia.py", convert = TRUE)
+  reticulate::source_python("kansas.py", convert = TRUE)
   
   donor_cleaner <- function(input_data_path, state_fin){
     
@@ -137,6 +140,12 @@ server <- function(input, output) {
     if (state_fin == "VA"){
       
       temp_data <- virginia(input_data_path) %>% as_tibble()
+      
+    }
+    
+    else if (state_fin == "KS"){
+      
+      temp_data <- kansas(input_data_path) %>% as_tibble()
       
     }
     
@@ -544,6 +553,22 @@ server <- function(input, output) {
       )
       
       temp_data <- temp_data %>% mutate(donation_date = as.Date(donation_date))
+      
+    }
+    
+    else if (state_fin == "KS"){
+      
+      
+      temp_data <- temp_data %>% add_column("phone1" = '',
+                                            "phone2" = '',
+                                            "email1" = '',
+                                            "email2" = '',
+                                            "full_name" = '',
+                                            "full_address" = ''
+      ) 
+      
+      temp_data <- temp_data %>% 
+        mutate_if(is.list, as.character)
       
     }
     
@@ -1366,6 +1391,12 @@ server <- function(input, output) {
     if (input$state == "VA"){
       
     df <- virginia(input$donorfile$datapath) %>% as_tibble() 
+      
+    }
+    
+    else if (input$state == "KS"){
+      
+      df <- kansas(input$donorfile$datapath) %>% as_tibble() 
       
     }
     
