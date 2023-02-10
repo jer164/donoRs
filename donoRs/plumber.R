@@ -1,35 +1,33 @@
 library(plumber)
+library(shiny)
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(stringr)
+library(DT)
+library(reticulate)
+library(XML)
+library(glue)
 
-#* @apiTitle Plumber Example API
-#* @apiDescription Plumber example description.
+#* @apiTitle Donors API
+#* @apiDescription Interface with the Donor Cleaner to receive .CSVs for ABBA.
 
-#* Echo back the input
-#* @param msg The message to echo
-#* @get /echo
-function(msg = "") {
-    list(msg = paste0("The message is: '", msg, "'"))
+source("./cleaner.R") 
+
+#* Input donor file
+#* @param input_path
+#* @param state
+#* @post  /donors
+
+function(input_path, state, res) {
+  
+  temp_data <- donor_cleaner(input_path, state)
+  filename <- file.path(tempdir(), glue("{state}.csv"))
+  csv <- write.csv(temp_data, filename, row.names = FALSE)
+  include_file(filename, res, 'csv/text')
+  
 }
 
-#* Plot a histogram
-#* @serializer png
-#* @get /plot
-function() {
-    rand <- rnorm(100)
-    hist(rand)
-}
 
-#* Return the sum of two numbers
-#* @param a The first number to add
-#* @param b The second number to add
-#* @post /sum
-function(a, b) {
-    as.numeric(a) + as.numeric(b)
-}
 
-# Programmatically alter your API
-#* @plumber
-function(pr) {
-    pr %>%
-        # Overwrite the default serializer to return unboxed JSON
-        pr_set_serializer(serializer_unboxed_json())
-}
+
