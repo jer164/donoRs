@@ -14,14 +14,22 @@ data_detector <- function(input_path){
 library(readr)
 library(tidyverse)
 dickens <- read_csv("~//Documents/Data_Projects/donoRs/test_data/dickens_testing.csv")
-df_path = "~//Documents/Data_Projects/donoRs/test_data/dickens_testing.csv"
-names_detection <- read_csv("~//Documents/Data_Projects/donoRs/test_data/NationalNames.csv", 
+sherrod_brown <- read_csv("~//Documents/Data_Projects/donoRs/test_data/sherrod_brown.csv")
+eric_adams <- read_csv("~//Documents/Data_Projects/donoRs/test_data/eric_adams_test.csv")
+df_path = "~//Documents/Data_Projects/donoRs/test_data/eric_adams_test.csv"
+  names_detection <- read_csv("~//Documents/Data_Projects/donoRs/test_data/NationalNames.csv", 
                           col_types = cols(Id = col_skip(), Year = col_skip(), 
                                            Gender = col_skip(), Count = col_skip()))
 
 donors <- function(input_path){
   
-  df <- read_csv(input_path)
+  good_names <- c("donation_date", "donation_amount",	"full_name", "addr1", 
+                  "city",	"state","zip", "full_address", "first_name", "middle_name",	
+                  "last_name", "addr2",	"phone1",	"phone2",	"email1",	"email2")
+  
+  df <- read_csv(input_path) %>% 
+    mutate_all(as.character) %>% 
+    mutate(across(everything(), gsub, pattern = "[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,3})?", replacement = ""))
 
   for (i in 1:ncol(df)){
     
@@ -37,7 +45,7 @@ donors <- function(input_path){
         
       }
       
-      else if (sum(tmp_result)/length(tmp_result) > .70) {
+      if (sum(tmp_result)/length(tmp_result) > .70) {
         
         tmp_city <- word(tmp, 1, sep = ' ')
         tmp_state <- word(tmp, 2, sep = ' ')
@@ -49,13 +57,63 @@ donors <- function(input_path){
           mutate(state = tmp_state) %>% 
           mutate(zip = tmp_zip)
         
+        next
+        
+      }
+      
+      tmp_result <- str_detect(tmp,"[0-9]+\\s([A-Za-z]+( [A-Za-z]+)+)")
+      
+      if (anyNA(tmp_result) == TRUE){
+        
+        tmp_result <- replace_na(tmp_result, FALSE)
+        
+      }
+      
+      if (sum(tmp_result)/length(tmp_result) > .70) {
+        
+        df <- df %>% 
+          rename(addr1 = i)
+        
+        next
+        
+      }
+      
+      if (str_detect(colnames(df[i]), "city|City|CITY") == TRUE &
+          'city' %in% colnames(df) == FALSE){
+        
+        df <- df %>% 
+          rename(city = i)
+        
+        next
+        
+      }
+      
+      
+      if (str_detect(colnames(df[i]), "state|State|STATE") == TRUE & 
+          'state' %in% colnames(df) == FALSE){
+        
+        df <- df %>% 
+          rename(state = i)
+        
+        next
+        
+        
+      }
+      
+      if (str_detect(colnames(df[i]), "zip|Zip|ZIP") == TRUE & 
+          'zip' %in% colnames(df) == FALSE){
+        
+        df <- df %>% 
+          rename(zip = i)
+        
+        next
         
       }
       
       
       ### Amount Detection
       
-      tmp_result <- str_detect(tmp,"\\$")
+      tmp_result <- colnames(df[i])
       
       
       if (anyNA(tmp_result) == TRUE){
@@ -64,7 +122,7 @@ donors <- function(input_path){
         
       }
       
-      else if (sum(tmp_result)/length(tmp_result) > .70) {
+      else if (str_detect(tmp_result, 'amount|Amount|^AMNT$') == TRUE) {
         
         df <- df %>% 
           rename(donation_amount = i)
@@ -86,7 +144,7 @@ donors <- function(input_path){
       
       ### Search for full_name
       
-      tmp_result <- str_detect(tmp, "([A-Za-z]+)\\s([A-Za-z]+)$")
+      tmp_result <- str_detect(tmp, "^([A-Za-z]+)?(\\s|\\,)?\\s([A-Za-z]+)$")
       
       
       if (anyNA(tmp_result) == TRUE){
@@ -95,7 +153,18 @@ donors <- function(input_path){
         
       }
       
-      else if (sum(tmp_result)/length(tmp_result) > .60) {
+      ### Workaround for Middle Names
+      
+      if (str_detect(colnames(df[i]), "middle|Middle") == TRUE){
+        
+        df <- df %>% 
+          rename(middle_name = i)
+        
+        next
+        
+      }
+      
+      if (sum(tmp_result)/length(tmp_result) > .60 & 'full_name' %in% colnames(df) == FALSE) {
         
         df <- df %>% 
           rename(full_name = i)
@@ -103,8 +172,10 @@ donors <- function(input_path){
         next
         
       }
+      
+      ### Search for remaining names
         
-      tmp_result <- str_to_title(na.omit(tmp)) %in% names_detection$Name
+      tmp_result <- str_to_title(word(na.omit(tmp), 1)) %in% names_detection$Name
       
       if (anyNA(tmp_result) == TRUE){
         
@@ -112,14 +183,19 @@ donors <- function(input_path){
         
       }
       
-      if ("first_name" %in% colnames(df) == TRUE){
+      
+      if ("first_name" %in% colnames(df) == TRUE &
+          str_detect(colnames(df[i]), "last|Last") == TRUE){
         
         df <- df %>% 
           rename(last_name = i)
         
+        next
+        
       }
       
-      else if (sum(tmp_result)/length(tmp_result) > .50) {
+      else if (sum(tmp_result)/length(tmp_result) > .80 &
+               "first_name" %in% colnames(df) == FALSE){
         
         df <- df %>% 
           rename(first_name = i)
@@ -130,7 +206,10 @@ donors <- function(input_path){
       
       ### Date detection
       
-      if (class(tmp) == 'Date'){
+      tmp_result <- str_extract(tmp, "^([0-9]{4})\\-([0-9]{2})\\-([0-9]{2})$|^([0-9]+)/([0-9]+)/([0-9]{4})$")
+      
+      
+      if (length(unique(tmp_result)) > 5){
         
         df <- df %>% 
           rename(donation_date = i)
@@ -140,14 +219,38 @@ donors <- function(input_path){
       
   }
   
-  df <- df %>% 
-    mutate(donation_amount = gsub("\\$", '', donation_amount))
+  
+  for (col in 1:length(good_names)){
+    
+    if (good_names[col] %in% colnames(df) == FALSE){
+      
+      tmp_col <- good_names[col]
+      
+      df[paste0(tmp_col)] <- ''
+      
+    }
+    
+    
+  }
+  
+  
+  df <- df %>%
+    mutate(donation_amount = gsub("\\$", '', donation_amount)) %>% 
+    select(good_names)
   
   return(df)
 
 }
 
 test <- donors(df_path)
+
+
+
+
+str_detect(colnames(eric_adams), 'amount|Amount|AMNT')
+
+
+
 
 
 
