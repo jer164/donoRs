@@ -5,11 +5,13 @@ This app is designed to format .CSVs and .TXTs downloaded from state campaign fi
 
 ## File Types 
 
-Kansas: .html (**NOTE**: These files download as `.xls` files. You have to manually change the file extension to `.html`.
+**Kansas**: .html (*NOTE*: These files download as `.xls` files. You have to manually change the file extension to `.html`.
 
-Virginia: .xml
+**Virginia**: .xml
 
-Massachusetts, Michigan, Montana: .txt
+**Massachusetts**, **Michigan**, **Montana**: .txt
+
+**All others**: .csv 
 
 ## Using the Site
 
