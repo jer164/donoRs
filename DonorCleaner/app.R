@@ -114,8 +114,12 @@ ui <- fluidPage(
         # Output: Data file ----
         dataTableOutput("contents")
         
-    )  
+    )
+    
+    
+    
   )    
+  
 )
 
 
@@ -1453,7 +1457,13 @@ server <- function(input, output) {
   output$donorsize <- renderText({
     paste("<b>Number of Donors: </b>", nrow(datasetInput()))
   })
-
+  
+    
+  output$plot <- renderPlot({
+      ggplot(data = datasetInput(), aes(donation_date, donation_amount) + geom_point()}
+  
+  )
+  
 }
 
 # Run the application 

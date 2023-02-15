@@ -13,11 +13,20 @@ data_detector <- function(input_path){
 
 library(readr)
 library(tidyverse)
+
+
 dickens <- read_csv("~//Documents/Data_Projects/donoRs/test_data/dickens_testing.csv")
 sherrod_brown <- read_csv("~//Documents/Data_Projects/donoRs/test_data/sherrod_brown.csv")
 eric_adams <- read_csv("~//Documents/Data_Projects/donoRs/test_data/eric_adams_test.csv")
 df_path = "~//Documents/Data_Projects/donoRs/test_data/eric_adams_test.csv"
-  names_detection <- read_csv("~//Documents/Data_Projects/donoRs/test_data/NationalNames.csv", 
+names_detection <- read_csv("~//Documents/Data_Projects/donoRs/test_data/NationalNames.csv", 
+                            col_types = cols(Id = col_skip(), Year = col_skip(), 
+                                             Gender = col_skip(), Count = col_skip()))
+
+##### Mac Files
+eric_adams <- read_csv("~/Documents/donors/donoRs/test_data/eric_adams_test.csv")
+df_path = "/Users/jackson/Documents/donor_for_cleaning/kevin_stitt.csv"
+names_detection <- read_csv("~/Documents/donors/donoRs/test_data/NationalNames.csv", 
                           col_types = cols(Id = col_skip(), Year = col_skip(), 
                                            Gender = col_skip(), Count = col_skip()))
 
@@ -195,7 +204,8 @@ donors <- function(input_path){
       }
       
       else if (sum(tmp_result)/length(tmp_result) > .80 &
-               "first_name" %in% colnames(df) == FALSE){
+               "first_name" %in% colnames(df) == FALSE &
+               "full_name" %in% colnames(df) == FALSE){
         
         df <- df %>% 
           rename(first_name = i)
@@ -243,6 +253,7 @@ donors <- function(input_path){
 }
 
 test <- donors(df_path)
+write.csv(test, "test_data/new_cleaned_adams.csv")
 
 
 
