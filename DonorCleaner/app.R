@@ -67,7 +67,8 @@ ui <- fluidPage(
           "Connecticut" = "CT",
           "Delaware" = "DE",
           "Florida" = "FL",
-          "Georgia" = "GA",
+          "Georgia (Transactions)" = "GA",
+          "Georgia (Finance Report)" = "GA_old",
           "Hawaii" = "HI",
           "Idaho" = "ID",
           "Illinois" = "IL",
@@ -152,7 +153,7 @@ server <- function(input, output) {
       
     }
     
-    else if (input$state == "NC" | input$state == "NM" | input$state == "WV"){  
+    else if (input$state == "NM" | input$state == "WV"){  
     
     df <- read_csv(input$donorfile$datapath, skip = 1)
     

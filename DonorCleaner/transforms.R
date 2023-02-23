@@ -36,7 +36,7 @@ donor_cleaner <- function(input_data_path, state_fin){
   
   ### These states have a non-tabular first row
   
-  else if (state_fin == "GA" | state_fin == "NC" | state_fin == "NM" | state_fin == "WV"){
+  else if (state_fin == "GA" | state_fin == "NM" | state_fin == "WV"){
     
     temp_data <- read_csv(input_data_path, skip = 1) %>% as_tibble()
     
@@ -366,12 +366,36 @@ donor_cleaner <- function(input_data_path, state_fin){
       mutate(addr1 = word(contributor_address, 1, sep = ",,|,")) %>% 
       mutate(city = word(contributor_address, 2, sep = ",,|,")) %>% 
       mutate(state = word(contributor_address, 3, sep = ",,|,")) %>% 
-      mutate(zip = str_extract(contributor_addressPD, "\\d{5}")) %>% 
+      mutate(zip = str_extract(contributor_address, "\\d{5}")) %>% 
       mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
       mutate(city = ifelse(str_detect(city, "\\d+") == TRUE, 'NULL', city))
     
     
   }
+  
+  else if (state_fin == "GA_old"){
+    
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename("first_name" = "first_name",
+                                      "last_name" = "last_name",
+                                      "donation_amount" = "cash_amount",
+                                      "donation_date" = "date",
+                                      "addr1" = "address"
+                                      )
+    
+    temp_data <- temp_data %>% add_column("middle_name" = '',
+                                          "phone1" = '',
+                                          "phone2" = '',
+                                          "email1" = '',
+                                          "email2" = '',
+                                          "addr2" = '',
+                                          "full_address" = '',
+                                          "full_name" = ''
+    )
+    
+  }
+  
   
   else if (state_fin == "HI"){
     
@@ -598,12 +622,6 @@ donor_cleaner <- function(input_data_path, state_fin){
   
   else if (state_fin == "MD"){
     
-    towns <- read_csv("maryland_towns.csv", 
-                      col_types = cols(...1 = col_skip()), 
-                      skip = 1)
-    
-    towns <- paste(towns$Name, collapse='|')
-    
     temp_data <- temp_data %>% clean_names()
     
     temp_data <- temp_data %>% rename("full_name" = "contributor_name",
@@ -624,15 +642,6 @@ donor_cleaner <- function(input_data_path, state_fin){
                                           "city" = '',
                                           "zip" = ''
     )
-    
-    
-    temp_data <- temp_data %>% 
-      mutate(first_name = word(full_name, 2, sep = '  ')) %>% 
-      mutate(last_name = word(full_name, 1, sep = ' ')) %>% 
-      mutate(city = str_extract(full_address, pattern = towns)) %>% 
-      mutate(state = word(full_address, -2, sep = ' ')) %>% 
-      mutate(zip = word(full_address, -1, sep = ' '))
-    
     
   }
   
@@ -777,11 +786,11 @@ donor_cleaner <- function(input_data_path, state_fin){
     temp_data <- temp_data %>% clean_names()
     
     temp_data <- temp_data %>% rename("full_name" = "name",
-                                      "addr1" = "street_1",
-                                      "addr2" = 'street_2',
+                                      "addr1" = "street_line_1",
+                                      "addr2" = 'street_line_2',
                                       "donation_amount" = "amount",
-                                      "donation_date" = "date",
-                                      "zip" = "full_zip")
+                                      "donation_date" = "date_occured",
+                                      "zip" = "zip_code")
     
     temp_data <- temp_data %>% add_column("phone1" = '',
                                           "phone2" = '',
