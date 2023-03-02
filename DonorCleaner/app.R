@@ -51,6 +51,7 @@ ui <- fluidPage(
         )
       ),
       htmlOutput("donorsize"),
+      htmlOutput("usabledonors"),
       # Horizontal line ----
       tags$hr(),
       selectInput(
@@ -136,38 +137,24 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   source("transforms.R")
+  
+  candidate <- reactive({
+    input$philly_can
+  })
+  
+  state_fin <- reactive({
+    input$state
+  })
 
   #### Create DataTable on Output
 
   output$contents <- renderDataTable({
-
-    if (input$state == "VA") {
-      df <- virginia(input$donorfile$datapath) %>% as_tibble()
-    } else if (input$state == "KS") {
-      df <- kansas(input$donorfile$datapath) %>% as_tibble()
-    } else if (input$state == "MO") {
-      df <- missouri(input$donorfile$datapath) %>% as_tibble()
-    } else if (input$state == "PHIL") {
-      df <- philadelphia(input$philly_can) %>% as_tibble()
-    } else if (input$state == "NM" | input$state == "WV") {
-      df <- read_csv(input$donorfile$datapath, skip = 1)
-    } else if (input$state == "MA" | input$state == "MI") {
-      df <- read_delim(input$donorfile$datapath,
-        delim = "\t", escape_double = FALSE,
-        trim_ws = TRUE
-      )
-    } else if (input$state == "MT") {
-      df <- read_delim(input$donorfile$datapath,
-        delim = "|", escape_double = FALSE, trim_ws = TRUE
-      )
-    } else if (input$state == "AZ") {
-      temp_data <- read.csv(input$donorfile$datapath, fileEncoding = "UTF-16LE") %>% as_tibble()
-    } else {
-      df <- read_csv(input$donorfile$datapath)
-    }
     
-    df <- df %>%
+    
+    df <- datasetInput() %>%
       select_if(function(x) !(all(is.na(x)) | all(x == "")))
+      
+    
   })
 
   ##### Create reactive dataset for download
@@ -175,9 +162,9 @@ server <- function(input, output) {
   
   datasetInput <- reactive({
     if (input$state == 'PHIL'){
-    donor_cleaner(input$philly_can, input$state)}
+    donor_cleaner(input$philly_can, state_fin())}
     else{
-      donor_cleaner(input$donorfile$datapath, input$state)}
+      donor_cleaner(input$donorfile$datapath, state_fin())}
   })
 
   ###### Create download
@@ -193,6 +180,12 @@ server <- function(input, output) {
   output$donorsize <- renderText({
     paste("<b>Number of Donors: </b>", nrow(datasetInput()))
   })
+  
+  output$usabledonors <- renderText({
+    paste("<b>Number of ABBA-Friendly Donors: </b>", sum(complete.cases(subset(datasetInput(), select = c("full_name", "first_name", "last_name")))))
+  })
+  
+
 }
 
 # Run the application
