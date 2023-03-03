@@ -54,6 +54,7 @@ ui <- fluidPage(
       htmlOutput("usabledonors"),
       htmlOutput("avg_donors"),
       htmlOutput("locations"),
+      htmlOutput("missing_zips"),
       # Horizontal line ----
       tags$hr(),
       selectInput(
@@ -140,6 +141,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   source("transforms.R")
   
+  
   candidate <- reactive({
     input$philly_can
   })
@@ -163,11 +165,17 @@ server <- function(input, output) {
 
   
   datasetInput <- reactive({
+    
+    
     if (input$state == 'PHIL'){
-    donor_cleaner(input$philly_can, state_fin())}
+      donors_df <- donor_cleaner(input$philly_can, state_fin())}
     else{
-      donor_cleaner(input$donorfile$datapath, state_fin())}
+      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())}
+    
+    
   })
+  
+  
 
   ###### Create download
   output$downloadData <- downloadHandler(
@@ -192,8 +200,13 @@ server <- function(input, output) {
   })
   
   output$locations <- renderText({
-    paste("<b>Number of States: </b>", length(unique(datasetInput()$state)))
+    paste("<b>Most Frequent State: </b>", datasetInput() %>% count(state) %>% slice_max(n = 1, order_by = n) %>% pull(state))
   })
+  
+  output$missing_zips <- renderText({
+    paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
+  })
+  
 
 }
 
