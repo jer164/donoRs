@@ -129,9 +129,9 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
     temp_data <- temp_data %>%
       mutate(donation_amount = gsub("\\$", "", donation_amount)) %>%
-      mutate(city = word(full_address, 1, sep = " ")) %>%
-      mutate(state = word(full_address, 2, sep = " ")) %>%
-      mutate(zip = word(full_address, 3, sep = " ")) %>%
+      mutate(city = gsub("([A-Z]{2})|\\d{5}", "", full_address)) %>%
+      mutate(state = str_extract(full_address, "[A-Z]{2}")) %>%
+      mutate(zip = str_extract(full_address, "\\d{5}")) %>%
       mutate(full_address = "NULL")
   } else if (state_fin == "AK") {
     temp_data <- temp_data %>% clean_names()

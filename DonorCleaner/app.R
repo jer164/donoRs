@@ -52,6 +52,8 @@ ui <- fluidPage(
       ),
       htmlOutput("donorsize"),
       htmlOutput("usabledonors"),
+      htmlOutput("avg_donors"),
+      htmlOutput("locations"),
       # Horizontal line ----
       tags$hr(),
       selectInput(
@@ -185,6 +187,13 @@ server <- function(input, output) {
     paste("<b>Number of ABBA-Friendly Donors: </b>", sum(complete.cases(subset(datasetInput(), select = c("full_name", "first_name", "last_name")))))
   })
   
+  output$avg_donors <- renderText({
+    paste("<b>Average Donation Amount: </b>", round(mean(datasetInput()$donation_amount), 3))
+  })
+  
+  output$locations <- renderText({
+    paste("<b>Number of States: </b>", length(unique(datasetInput()$state)))
+  })
 
 }
 
