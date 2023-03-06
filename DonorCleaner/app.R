@@ -192,9 +192,9 @@ server <- function(input, output) {
   })
   
   output$usabledonors <- renderText({
-    paste("<b>Number of ABBA-Friendly Donors: </b>", sum(complete.cases(subset(datasetInput(), select = c("full_name", "first_name", "last_name")))))
+    abba_rows <- sum(datasetInput()$full_name != "" | (datasetInput()$first_name != "" & datasetInput()$last_name != ""))
+    paste("<b>ABBA-Friendly Donors: </b>", abba_rows)
   })
-  
   output$avg_donors <- renderText({
     paste("<b>Average Donation Amount: </b>", round(mean(datasetInput()$donation_amount), 3))
   })
