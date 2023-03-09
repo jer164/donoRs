@@ -23,7 +23,7 @@ Using this tool is fairly straightforward.
 
 If it has worked correctly, your screen should look like this:
         
-   ![donor_step_1]("https://user-images.githubusercontent.com/62763243/224132387-ee8d69ca-1512-45c9-852f-1bc8a0b11636.png")
+   ![donor_step_1](https://user-images.githubusercontent.com/62763243/224132387-ee8d69ca-1512-45c9-852f-1bc8a0b11636.png)
 
 3\. Click the ```Download``` button, and choose a name for the file. Name it such that you will know it is the correctly formatted file.
 
