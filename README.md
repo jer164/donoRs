@@ -29,8 +29,17 @@ If it has worked correctly, your screen should look like this:
 
 4\. Done!
 
+## Philadelphia Search Portal
+
+This app supports direct searching of candidates in the Philadelphia campaign finance system. 
+
+1\. Select Philadelphia from the dropdown menu. On first load-up of the website, it may be a bit slow. 
+
+2\. Search for your candidate using their first name, last name, full name, or campaign committee name. Use your instincts to decide if the query is returning the correct amount or the correct people. I strongly recommend you find the campaign committee name to ensure you have the right search query. 
+
+3\. Proceed with steps 3 and 4 from above!
+
 ## In Progress
 
 1. Adding a list of correct search portals (some campaign sites have multiple).
-2. Adding states with weird formats.
-3. Figuring out which states that have direct API access.
+2. Patching errors and adding support in the wake of ABBA updates. 
