@@ -330,7 +330,10 @@ donor_cleaner <- function(input_data_path, state_fin) {
     
     temp_data <- temp_data %>% 
       unite(full_address, addr1, city_state_zip, sep = " ") %>% 
-      mutate(addr1 = "")
+      mutate(addr1 = "") %>% 
+      mutate(first_name = word(full_name, 2, sep = " ")) %>% 
+      mutate(last_name = word(full_name, 1, sep = " ")) %>% 
+      mutate(full_name = "")
     
     
   } else if (state_fin == "GA") {
