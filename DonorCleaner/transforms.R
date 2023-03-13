@@ -41,7 +41,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
   ### These states use .TXT files
 
-  else if (state_fin == "MA" | state_fin == "MI") {
+  else if (state_fin == "MA" | state_fin == "MI" | state_fin == "FL") {
     temp_data <- read_delim(input_data_path,
       delim = "\t", escape_double = FALSE,
       trim_ws = TRUE
@@ -304,18 +304,17 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- temp_data %>%
       mutate(donation_date = gsub("-", "/", donation_date))
   } else if (state_fin == "FL") {
+    
+    temp_data <- temp_data %>% clean_names()
+    
     temp_data <- temp_data %>% rename(
-      "full_name" = "Contributor_Name",
-      "full_address" = "Address",
-      "donation_amount" = "Amount",
-      "donation_date" = "Date",
-      "state" = "State",
-      "city" = "City",
-      "zip" = "Zip"
+      "full_name" = "contributor_name",
+      "addr1" = "address",
+      "donation_amount" = "amount",
+      "donation_date" = "date"
     )
 
     temp_data <- temp_data %>% add_column(
-      "addr1" = "",
       "first_name" = "",
       "middle_name" = "",
       "last_name" = "",
@@ -323,8 +322,17 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "phone2" = "",
       "email1" = "",
       "email2" = "",
-      "addr2" = ""
+      "addr2" = "",
+      "city" = "",
+      "state" = "",
+      "zip" = ""
     )
+    
+    temp_data <- temp_data %>% 
+      unite(full_address, addr1, city_state_zip, sep = " ") %>% 
+      mutate(addr1 = "")
+    
+    
   } else if (state_fin == "GA") {
     temp_data <- temp_data %>% clean_names()
 
