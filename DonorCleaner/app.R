@@ -8,6 +8,7 @@
 #
 
 library(shiny)
+library(rvest)
 library(tidyverse)
 library(lubridate)
 library(janitor)
