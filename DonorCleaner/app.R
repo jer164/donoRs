@@ -140,7 +140,7 @@ ui <- fluidPage(
 
 
 server <- function(input, output) {
-  source("transforms.R")
+  source("src/transforms.R")
   
   
   candidate <- reactive({

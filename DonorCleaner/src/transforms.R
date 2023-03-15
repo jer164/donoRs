@@ -1,10 +1,10 @@
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
-reticulate::source_python("virginia.py", convert = TRUE)
-reticulate::source_python("kansas.py", convert = TRUE)
-reticulate::source_python("missouri.py", convert = TRUE)
-reticulate::source_python("philadelphia.py", convert = TRUE)
+reticulate::source_python("src/virginia.py", convert = TRUE)
+reticulate::source_python("src/kansas.py", convert = TRUE)
+reticulate::source_python("src/missouri.py", convert = TRUE)
+reticulate::source_python("src/philadelphia.py", convert = TRUE)
 
 donor_cleaner <- function(input_data_path, state_fin) {
   ### Collect ABBA-friendly names
