@@ -5,14 +5,7 @@ account: jer164
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8169019
-<<<<<<< Updated upstream:DonorCleaner/rsconnect/shinyapps.io/jer164/DonorCleaner.dcf
-bundleId: 6926907
-url: https://jer164.shinyapps.io/DonorCleaner/
-when: 1678209923.90524
-lastSyncTime: 1678209923.90526
-=======
 bundleId: 6961586
 url: https://jer164.shinyapps.io/DonorCleaner/
 when: 1678894543.52066
 lastSyncTime: 1678894543.5207
->>>>>>> Stashed changes:DonorCleanerApp/rsconnect/shinyapps.io/jer164/DonorCleaner.dcf
