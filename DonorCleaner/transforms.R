@@ -902,20 +902,15 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "middle_name" = "",
       "addr1" = "",
       "addr2" = "",
+      "city"= "",
       "state" = "",
       "zip" = ""
     )
-    temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
-
+    
     temp_data <- temp_data %>%
-      separate(full_address, c("full_address", "addr1"), sep = ",,") %>%
-      separate(addr1, c("city", "state", "zip"), sep = ",") %>%
-      mutate(addr1 = full_address) %>%
-      mutate(addr1 = ifelse(is.na(city) == TRUE, word(full_address, 1, -4, sep = ","), full_address)) %>%
-      mutate(city = ifelse(is.na(city) == TRUE, word(full_address, -3, sep = ","), city)) %>%
-      mutate(state = ifelse(is.na(state) == TRUE, word(full_address, -2, sep = ","), state)) %>%
-      mutate(zip = ifelse(is.na(zip) == TRUE, word(full_address, -1, sep = ","), zip)) %>%
-      mutate(full_address = "")
+      mutate(full_address = str_replace(full_address, ",,", ",")) %>% 
+      mutate(donation_amount = as.numeric(gsub("\\$|,", "", donation_amount))) %>% 
+      mutate(full_name = str_replace(full_name, "  ", " "))
   } else if (state_fin == "NYC") {
     temp_data <- temp_data %>% clean_names()
 
