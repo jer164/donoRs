@@ -5,9 +5,7 @@ account: jer164
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8576851
-bundleId: 6961813
+bundleId: 6962240
 url: https://jer164.shinyapps.io/DonorCleanerApp/
-when: 1678896896.96122
-lastSyncTime: 1678896896.96124
-asMultiple: FALSE
-asStatic: FALSE
+when: 1678901709.86421
+lastSyncTime: 1678901709.86422

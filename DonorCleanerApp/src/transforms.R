@@ -823,12 +823,8 @@ donor_cleaner <- function(input_data_path, state_fin) {
   }
 
 ######### ABBA transforms
-  
-# Select only the names we want to keep
-  
-  temp_data <- temp_data %>% select(good_names)
-  
 # Add the missing names with empty data
+  
   for (abba_col in good_names){
     if (abba_col %in% colnames(temp_data) == FALSE){
       #new_col <- paste0(abba_col)
@@ -837,6 +833,13 @@ donor_cleaner <- function(input_data_path, state_fin) {
     }
     
   }
+
+  
+# Select only the names we want to keep
+  
+  temp_data <- temp_data %>% select(good_names)
+  
+
   
 # Ensure donations aren't in bad format
   temp_data <- temp_data %>%
