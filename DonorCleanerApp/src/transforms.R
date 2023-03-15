@@ -1,3 +1,20 @@
+############## ABBA DONOR CLEANER ###################
+#####################################################
+#####################################################
+# Author: Jackson Rudoff                            #
+# Last Dev Period: Spring 2023                      #
+#                                                   #
+# About:                                            #
+# These transformations are intended to auto-format #
+# files downloaded from state campaign sites, for   #
+# use in ABBA's manual uploaded feature.            #
+#####################################################
+
+
+# Loading Python Source Code
+# This app relies on Python code for some of its transformations 
+# and web-scraping capabilities. 
+
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
@@ -5,6 +22,9 @@ reticulate::source_python("src/virginia.py", convert = TRUE)
 reticulate::source_python("src/kansas.py", convert = TRUE)
 reticulate::source_python("src/missouri.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
+
+
+#######################################################
 
 donor_cleaner <- function(input_data_path, state_fin) {
   ### Collect ABBA-friendly names
