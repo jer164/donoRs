@@ -140,7 +140,11 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   source("src/transforms.R")
-
+  
+  output_file_name <- reactive({
+    file_name <- input$donorfile$name
+    substr(file_name, 1, nchar(file_name) - 4)
+  })
 
   candidate <- reactive({
     input$philly_can
@@ -169,12 +173,10 @@ server <- function(input, output) {
     }
   })
 
-
-
   ###### Create download
   output$downloadData <- downloadHandler(
     filename = function() {
-      paste("candidate_name_formatted.csv", sep = "")
+      glue("{output_file_name()}_formatted.csv")
     },
     content = function(file) {
       write.csv(datasetInput(), file, row.names = FALSE, na = "")
