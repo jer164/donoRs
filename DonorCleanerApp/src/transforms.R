@@ -298,7 +298,6 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "zip" = "contributed_by_zip"
     )
 
-
     temp_data <- temp_data %>%
       mutate(donation_amount = gsub("\\$", "", donation_amount))
   } else if (state_fin == "IN") {
@@ -354,7 +353,6 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "city" = "ContributorCity",
       "zip" = "ContributorZip"
     )
-
 
     temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
   } else if (state_fin == "LA_C") {
@@ -823,6 +821,11 @@ donor_cleaner <- function(input_data_path, state_fin) {
   }
 
 ######### ABBA transforms
+  
+# Get name cols
+  
+  name_cols <- c("first_name", "last_name", "full_name")
+  
 # Add the missing names with empty data
   
   for (abba_col in good_names){
@@ -831,20 +834,17 @@ donor_cleaner <- function(input_data_path, state_fin) {
       temp_data <- temp_data %>% 
         add_column(!!abba_col := "")
     }
-    
   }
 
-  
 # Select only the names we want to keep
-  
   temp_data <- temp_data %>% select(good_names)
-  
-
   
 # Ensure donations aren't in bad format
   temp_data <- temp_data %>%
-    mutate(donation_amount = as.integer(donation_amount)) %>%
-    filter(donation_amount > 0)
+    mutate(donation_amount = as.integer(donation_amount)) %>% #integers only
+    filter(!is.na(donation_amount) & donation_amount > 0) %>% # remove NA or 0 
+    mutate(across(c(first_name, last_name, full_name), ~replace_na(.,""))) # for ABBA rows counts
+    
 
   return(temp_data)
 }

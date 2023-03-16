@@ -118,12 +118,10 @@ ui <- fluidPage(
         ),
         selected = "Alabama",
       ),
-      
       conditionalPanel(
         condition = "input.state == 'PHIL'",
         textInput("philly_can", "Philadelphia Candidate")
-        
-        ),
+      ),
 
       # Button
       downloadButton("downloadData", "Download"),
@@ -142,12 +140,12 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   source("src/transforms.R")
-  
-  
+
+
   candidate <- reactive({
     input$philly_can
   })
-  
+
   state_fin <- reactive({
     input$state
   })
@@ -155,29 +153,23 @@ server <- function(input, output) {
   #### Create DataTable on Output
 
   output$contents <- renderDataTable({
-    
-    
     df <- datasetInput() %>%
-      select_if(function(x) !(all(is.na(x)) | all(x == "")))
-      
-    
+      select_if(function(x) !(all(is.na(x)) | all(x == ""))) %>% 
+      select_if(~!all(. == "NULL"))
   })
 
   ##### Create reactive dataset for download
 
-  
+
   datasetInput <- reactive({
-    
-    
-    if (input$state == 'PHIL'){
-      donors_df <- donor_cleaner(input$philly_can, state_fin())}
-    else{
-      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())}
-    
-    
+    if (input$state == "PHIL") {
+      donors_df <- donor_cleaner(input$philly_can, state_fin())
+    } else {
+      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())
+    }
   })
-  
-  
+
+
 
   ###### Create download
   output$downloadData <- downloadHandler(
@@ -192,24 +184,23 @@ server <- function(input, output) {
   output$donorsize <- renderText({
     paste("<b>Number of Donors: </b>", nrow(datasetInput()))
   })
-  
+
   output$usabledonors <- renderText({
-    abba_rows <- sum(datasetInput()$full_name != "" | (datasetInput()$first_name != "" & datasetInput()$last_name != ""))
+    abba_rows <- sum(datasetInput()$full_name != "" | datasetInput()$first_name != "" & datasetInput()$last_name != "")
     paste("<b>ABBA-Friendly Donors: </b>", abba_rows)
   })
   output$avg_donors <- renderText({
     paste("<b>Average Donation Amount: </b>", round(mean(datasetInput()$donation_amount), 3))
   })
-  
+
   output$locations <- renderText({
-    paste("<b>Most Frequent State: </b>", datasetInput() %>% count(state) %>% slice_max(n = 1, order_by = n) %>% pull(state))
+    paste("<b>Most Frequent State: </b>", datasetInput() %>% 
+            count(state) %>% slice_max(n = 1, order_by = n) %>% pull(state))
   })
-  
+
   output$missing_zips <- renderText({
     paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
   })
-  
-
 }
 
 # Run the application
