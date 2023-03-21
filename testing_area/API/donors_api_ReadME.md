@@ -37,8 +37,9 @@ The following is a minimal example using a list of 500 donors to Ron DeSantis. T
 Run the API, and then pass a query with the two parameters defined in the request body:
 
 ```
-curl -X POST "http://127.0.0.1:7263/donors?input_path=%2FUsers%2Fjacksonrudoff%2FDocuments%2Fdonor_files%2Fdesantis.txt&state=FL" -H "accept: */*" -d ""
+# curl a REST request with two parameters
 
+curl -X POST "http://127.0.0.1:7263/donors?input_path=%2FUsers%2Fjacksonrudoff%2FDocuments%2Fdonor_files%2Fdesantis.txt&state=FL" -H "accept: */*" -d ""
 ```
 We can see that `input_path` is pointing to a local directory on my machine, and `state` is set to **FL**. With the state defined, the API understands both *how* to read in the file, and then what the necessary transformations are. 
 
