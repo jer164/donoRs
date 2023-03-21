@@ -41,4 +41,3 @@ vignettes/*.pdf
 .Rproj.user
 *.csv
 *.tsv
-*.dcf
