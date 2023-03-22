@@ -23,6 +23,7 @@ kansas <- function(input_path) {
   dates <- html_nodes(html, "[id^='lblDate_']") %>%
     html_text()
   
+  amounts <- html_nodes(html, "[id^='lblAmount_']") %>%
     html_text() %>%
     str_replace_all("\\$", "") # removes the '$' sign from the amounts
   
