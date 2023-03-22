@@ -343,8 +343,9 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "city" = "City",
       "zip" = "Zip"
     )
-
-    temp_data <- temp_data %>% mutate(donation_date = mdy_hms(donation_date, tz = Sys.timezone()))
+    
+    temp_data <- temp_data %>% 
+      mutate(donation_date = gsub(" 00:00:00", "", donation_date))
   } else if (state_fin == "LA") {
     temp_data <- temp_data %>% rename(
       "full_name" = "ContributorName",
