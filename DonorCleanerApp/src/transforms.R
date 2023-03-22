@@ -15,11 +15,12 @@
 # This app relies on Python code for some of its transformations 
 # and web-scraping capabilities. 
 
+source("src/kansas.R")
+
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
 reticulate::source_python("src/virginia.py", convert = TRUE)
-reticulate::source_python("src/kansas.py", convert = TRUE)
 reticulate::source_python("src/missouri.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
 
@@ -40,7 +41,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
   if (state_fin == "VA") {
     temp_data <- virginia(input_data_path) %>% as_tibble()
   } else if (state_fin == "KS") {
-    temp_data <- kansas(input_data_path) %>% as_tibble()
+    temp_data <- kansas(input_data_path)
   } else if (state_fin == "MO") {
     temp_data <- missouri(input_data_path) %>% as_tibble()
   } else if (state_fin == "PHIL") {
@@ -328,6 +329,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
     temp_data <- temp_data %>%
       mutate_if(is.list, as.character)
+    
   } else if (state_fin == "KY") {
     temp_data <- temp_data %>% rename(
       "first_name" = "ContributorFirstName",
