@@ -16,12 +16,13 @@
 # and web-scraping capabilities. 
 
 source("src/kansas.R")
+source("src/missouri.R")
 
 virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
 reticulate::source_python("src/virginia.py", convert = TRUE)
-reticulate::source_python("src/missouri.py", convert = TRUE)
+#reticulate::source_python("src/missouri.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
 
 
@@ -41,7 +42,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
   if (state_fin == "VA") {
     temp_data <- virginia(input_data_path) %>% as_tibble()
   } else if (state_fin == "KS") {
-    temp_data <- kansas(input_data_path)
+    temp_data <- kansas(input_data_path) %>% as_tibble()
   } else if (state_fin == "MO") {
     temp_data <- missouri(input_data_path) %>% as_tibble()
   } else if (state_fin == "PHIL") {
@@ -426,11 +427,12 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "donation_date" = "contribution_date"
     )
 
-
-
     temp_data <- temp_data %>%
-      mutate_if(is.list, as.character) %>%
-      mutate(donation_amount = gsub("\\$", "", donation_amount))
+      mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
+      mutate_if(is.list, as.character) %>% 
+      mutate(across(where(is.character), ~ gsub("NaN", "", .)))
+      
+    
   } else if (state_fin == "MI") {
     temp_data <- temp_data %>% clean_names()
 
@@ -843,7 +845,8 @@ donor_cleaner <- function(input_data_path, state_fin) {
   
 # Ensure donations aren't in bad format
   temp_data <- temp_data %>%
-    mutate(donation_amount = as.integer(donation_amount)) %>% #integers only
+    mutate(donation_amount = gsub("\\.\\d{2}", "", donation_amount)) %>% # remove decimals
+    mutate(donation_amount = as.integer(gsub(",", "", donation_amount))) %>% #integers only
     filter(!is.na(donation_amount) & donation_amount > 0) %>% # remove NA or 0 
     mutate(across(c(first_name, last_name, full_name), ~replace_na(.,""))) # for ABBA rows counts
     
