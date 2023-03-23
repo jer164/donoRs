@@ -22,7 +22,6 @@ virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
 reticulate::source_python("src/virginia.py", convert = TRUE)
-#reticulate::source_python("src/missouri.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
 
 
@@ -77,6 +76,11 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- temp_data[[1]] %>% as_tibble()
     colnames(temp_data) <- temp_data[1,]
     temp_data <- slice(temp_data, -1)
+  }
+  
+  else if (state_fin == "TX"){
+    
+    temp_data <- read_xlsx(input_data_path, skip = 2) 
   }
 
   ### These states use standard .CSVs
@@ -720,6 +724,21 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(state = word(full_address, -2, sep = ",")) %>%
       mutate(city = word(full_address, -3, sep = ",")) %>%
       mutate(full_address = word(full_address, 1, -4))
+    
+    
+  } else if (state_fin == "TX") {
+    
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "donation_amount" = "amount",
+      "donation_date" = "date"
+    )
+    
+    temp_data <- temp_data %>% 
+      mutate(first_name = word(contributor_name, 1, sep = " ")) %>% 
+      mutate(last_name = word(contributor_name, 2, sep = ","))
+    
   } else if (state_fin == "UT") {
     temp_data <- temp_data %>% rename(
       "full_name" = "NAME",

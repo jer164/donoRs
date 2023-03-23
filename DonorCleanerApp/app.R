@@ -1,5 +1,6 @@
 
 library(shiny)
+library(readxl)
 library(rvest)
 library(tidyverse)
 library(lubridate)
@@ -41,7 +42,8 @@ ui <- fluidPage(
           "text/comma-separated-values,text/plain",
           ".csv",
           ".xml",
-          ".html"
+          ".html",
+          ".xlsx"
         )
       ),
       htmlOutput("donorsize"),
@@ -100,6 +102,7 @@ ui <- fluidPage(
             "Rhode Island" = "RI",
             "South Carolina" = "SC",
             "Tennessee" = "TN",
+            "Texas" = "TX",
             "Utah" = "UT",
             "Virginia" = "VA",
             "Vermont" = "VT",
@@ -118,7 +121,8 @@ ui <- fluidPage(
 
       # Button
       downloadButton("downloadData", "Download"),
-      tags$a(href = "https://jer164.github.io/donoRs/", "User Guide", target = "_blank")
+      tags$hr(),
+      tags$a(href = "https://jer164.github.io/donoRs/", "Need Assistance? Check the User Guide", target = "_blank")
     ),
 
     # Main panel for displaying outputs ----
