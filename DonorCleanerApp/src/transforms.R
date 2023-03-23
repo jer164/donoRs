@@ -199,6 +199,16 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "city" = "contributor_city",
       "zip" = "contributor_zip"
     )
+  
+  } else if (state_fin == "DET") {
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "full_name" = "contributor_name",
+      "full_address" = "contributor_address",
+      "donation_amount" = "contribution_amount",
+      "donation_date" = "transaction_date"
+    )
 
    
   } else if (state_fin == "FEC") {

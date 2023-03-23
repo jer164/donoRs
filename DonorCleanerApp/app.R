@@ -58,6 +58,7 @@ ui <- fluidPage(
           `National` = list("FEC" = "FEC"),
           `City` = list(
             "Atlanta" = "ATL",
+            "Detroit" = "DET",
             "Los Angeles" = "LA_C",
             "New York City" = "NYC",
             "Philadelphia" = "PHIL"
