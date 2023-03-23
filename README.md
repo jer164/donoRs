@@ -66,7 +66,7 @@ Compatible file types will have each row as an *individual contributor*, with at
 
 No. Typically, these files are missing the identifying information that ABBA needs to match the donors to a target.
 
-#### ** How can I tell if the output file has missing data or other errors?**
+#### **How can I tell if the output file has missing data or other errors?**
 
 The main indicator that something has gone wrong is if you upload a file and a table doesn't output, even after waiting for several minutes. If you click `Download` and the output file is called "downloadData," this is also an indication that the file-handler couldn't parse what you provided. 
 
