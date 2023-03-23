@@ -1,6 +1,6 @@
 # Donor Formatter
 
-This app is designed to format `.csv`s, `.txt`s, as well as `HTML` and `xml` files downloaded from state and city campaign finance portals. For it to work properly, it needs to receive **unaltered** files downloaded directly from the campaign sites. It is also in constant development, so errors will likely crop up. Please DM me on Slack or email me at jackson.rudoff@applecart.co with any comments, concerns, or error reports!
+This app is designed to format `.csv`, `.txt`, `HTML` and `xml` files downloaded from state and city campaign finance portals. For it to work properly, it needs to receive **unaltered** files downloaded directly from the campaign sites. It is also in constant development, so errors will likely crop up. Please DM me on Slack or email me at jackson.rudoff@applecart.co with any comments, concerns, or error reports!
 
 This website's core functionality is also available as a `PlumbeR` API to be implemented in a pipeline or other data stream. Please shoot me message if you have any use for this. 
 
