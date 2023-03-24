@@ -19,50 +19,54 @@ options(shiny.maxRequestSize = 30 * 1024^2)
 
 # Define UI for data upload app ----
 ui <- fluidPage(
-  tags$style(
-    type = "text/css",
-    ".shiny-output-error { visibility: hidden; }",
-    ".shiny-output-error:before { visibility: hidden; }",
-    HTML("
-      /* Change background color */
-      body {
-        background-color: #FAFAFA;
-        font-family: 'Helvetica', sans-serif;
-      }
-      .well {
-        background-color: #B2C7DF;
-      }
-      .btn-default[download] {
-        background-color: #3498db;
-        border-color: #3498db;
-      }
-      table.dataTable tbody tr:hover {
-        background-color: #3498db;
-        color: white;
-      }
-      table.dataTable {
-        background-color: #f7f7f7;
-      }
-      /* Change table size */
-      .dataTables_wrapper {
-        width: 100%;
-        height: 100%;
-        overflow-x: auto;
-        overflow-y: scroll;
-      }
-      /* Change font size */
-      h1, h2, h3, h4, h5, h6 {
-        font-size: 1.5em;
-      }
-      .title.panel-title {
-        font-size: 48px;
-      }
-      /* Change button color */
-      .btn-primary {
-        background-color: ##197EF0;
-        border-color: #0B1E33;
-      }
-    ")
+  tags$head(
+    tags$style(
+      type = "text/css",
+      ".shiny-output-error { visibility: hidden; }",
+      ".shiny-output-error:before { visibility: hidden; }",
+      HTML("
+        /* Change background color */
+        body {
+          background-color: #F5F8FA;
+          font-family: 'Montserrat', sans-serif;
+        }
+        .well {
+          background-color: #E5EEF3;
+        }
+        .btn-default[download] {
+          background-color: #3498db;
+          border-color: #3498db;
+        }
+        table.dataTable tbody tr:hover {
+          background-color: #3498db;
+          color: white;
+        }
+        table.dataTable {
+          background-color: #ffffff;
+        }
+        /* Change table size */
+        .dataTables_wrapper {
+          width: 100%;
+          height: 100%;
+          overflow-x: auto;
+          overflow-y: scroll;
+        }
+        .title.panel-title {
+          font-size: 48px;
+          color: #197EF0;
+        }
+        /* Change button color */
+        .btn-primary {
+          background-color: #197EF0;
+          border-color: #197EF0;
+        }
+        /* Change selectInput color */
+        select {
+          background-color: #E5EEF3;
+        }
+      ")
+    ),
+    tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap")
   ),
 
   # App title ----
@@ -200,7 +204,7 @@ server <- function(input, output) {
       select_if(function(x) !(all(is.na(x)) | all(x == ""))) %>% 
       select_if(~!all(. == "NULL"))
     datatable(df, options = list(
-      pageLength = 5 # Set the height to 300px
+      pageLength = 5
     ))
   })
 
