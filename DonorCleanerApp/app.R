@@ -20,28 +20,40 @@ options(shiny.maxRequestSize = 30 * 1024^2)
 # Define UI for data upload app ----
 ui <- fluidPage(
   tags$head(
-    tags$style(
+    tags$link(
+      rel = "stylesheet",
       type = "text/css",
+      href = "https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:700|Open+Sans:b&effect=3d-float"
+    ),
+    tags$style(
       ".shiny-output-error { visibility: hidden; }",
       ".shiny-output-error:before { visibility: hidden; }",
       HTML("
         /* Change background color */
         body {
           background-color: #F5F8FA;
-          font-family: 'Montserrat', sans-serif;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+        }
+        h1 {
+          font-family: 'Roboto', sans-serif;
+          font-size: 40px;
+          text-stroke: 0.8px #298EFF;
+          -webkit-text-stroke: 0.2px #298EFF;
         }
         .well {
-          background-color: #E5EEF3;
+          background-color: #D1E6F6;
         }
         .btn-default[download] {
-          background-color: #3498db;
-          border-color: #3498db;
+          background-color: #F5D8F4;
+          border-color: #0F1823;
         }
         table.dataTable tbody tr:hover {
-          background-color: #3498db;
+          background-color: #3C6C89;
           color: white;
         }
         table.dataTable {
+          header-color: #FF9925;
           background-color: #ffffff;
         }
         /* Change table size */
@@ -51,14 +63,10 @@ ui <- fluidPage(
           overflow-x: auto;
           overflow-y: scroll;
         }
-        .title.panel-title {
-          font-size: 48px;
-          color: #197EF0;
-        }
         /* Change button color */
         .btn-primary {
           background-color: #197EF0;
-          border-color: #197EF0;
+          border-color: #0F1823;
         }
         /* Change selectInput color */
         select {
@@ -66,11 +74,11 @@ ui <- fluidPage(
         }
       ")
     ),
-    tags$link(rel = "stylesheet", href = "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap")
   ),
 
   # App title ----
-  titlePanel("Donor Formatter"),
+  title = "Donors App",
+  h1("Donor Formatter"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -81,7 +89,7 @@ ui <- fluidPage(
 
 
       # Input: Select a file ----
-      fileInput("donorfile", "Select a .csv, .txt, .xml, or .html Donor File",
+      fileInput("donorfile", "Select a .csv, .txt, .xml, or .html list of contributions",
         multiple = TRUE,
         accept = c(
           "text/csv",
@@ -203,6 +211,7 @@ server <- function(input, output) {
     df <- datasetInput() %>%
       select_if(function(x) !(all(is.na(x)) | all(x == ""))) %>% 
       select_if(~!all(. == "NULL"))
+    
     datatable(df, options = list(
       pageLength = 5
     ))
