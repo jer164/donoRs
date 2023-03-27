@@ -19,7 +19,7 @@ options(shiny.maxRequestSize = 30 * 1024^2)
 
 ### State Donor Pages
 
-links_data <- readRDS("src/donor_links.csv")
+links_data <- read_csv("src/donor_links.csv")
 
 # Define UI for data upload app ----
 ui <- navbarPage(
@@ -201,7 +201,6 @@ tabPanel("State Website Links",
 )
 
 server <- function(input, output) {
-  
   
   output$statelinks <- renderDataTable({
     # Format the "State" column as hyperlinks using their corresponding "link" value
