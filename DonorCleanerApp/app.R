@@ -17,8 +17,12 @@ library(XML)
 
 options(shiny.maxRequestSize = 30 * 1024^2)
 
+### State Donor Pages
+
+links_data <- readRDS("src/donor_links.csv")
+
 # Define UI for data upload app ----
-ui <- fluidPage(
+ui <- navbarPage(
   tags$head(
     tags$link(
       rel = "stylesheet",
@@ -35,11 +39,14 @@ ui <- fluidPage(
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
         }
-        h1 {
-          font-family: 'Roboto', sans-serif;
-          font-size: 40px;
-          text-stroke: 0.8px #298EFF;
-          -webkit-text-stroke: 0.2px #298EFF;
+        .title {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #0A4571;
         }
         .well {
           background-color: #D1E6F6;
@@ -77,8 +84,8 @@ ui <- fluidPage(
   ),
 
   # App title ----
-  title = "Donors App",
-  h1("Donor Formatter"),
+  title = 'Donors App',
+  tabPanel("Donor Formatter",
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -186,10 +193,25 @@ ui <- fluidPage(
       dataTableOutput("contents")
     )
   )
+),
+
+tabPanel("State Website Links",
+         dataTableOutput("statelinks")
+    )
 )
 
-
 server <- function(input, output) {
+  
+  
+  output$statelinks <- renderDataTable({
+    # Format the "State" column as hyperlinks using their corresponding "link" value
+    formattedlinks <- links_data %>%
+      mutate(State = paste0("<a href='", Link, "' target='_blank'>", State, "</a>")) %>%
+      select(State, Comments)
+    datatable(formattedlinks, escape = FALSE, options = list(dom = 't', pageLength = '50'), rownames = FALSE)
+  })
+  
+  # load the necessary code
   source("src/transforms.R")
   
   output_file_name <- reactive({
@@ -258,7 +280,12 @@ server <- function(input, output) {
   output$missing_zips <- renderText({
     paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
   })
+
+# Page 2
+
 }
+
+
 
 # Run the application
 shinyApp(ui = ui, server = server)
