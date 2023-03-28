@@ -15,7 +15,7 @@ library(XML)
 
 ### options
 
-options(shiny.maxRequestSize = 30 * 1024^2)
+options(shiny.maxRequestSize = 100 * 1024^2)
 
 ### State Donor Pages
 

@@ -792,6 +792,10 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(city = word(full_address, -2, sep = ",")) %>%
       mutate(full_address = word(full_address, 1, -4, sep = ","))
   } else if (state_fin == "WA") {
+    
+    temp_data <- temp_data %>%
+      filter(contributor_category == 'Individual')
+    
     temp_data <- temp_data %>% rename(
       "full_name" = "contributor_name",
       "addr1" = "contributor_address",
@@ -802,9 +806,10 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "zip" = "contributor_zip"
     )
 
-
     temp_data <- temp_data %>%
-      mutate(donation_date = as.character(gsub("UTC", "", donation_date)))
+     # mutate(donation_date = as.character(gsub("UTC", "", donation_date)))
+      mutate(full_name = sub(" ", ", ", full_name, fixed = TRUE)) %>% 
+      mutate(donation_date = substr(donation_date, 1, 10))
   } else if (state_fin == "WI") {
     temp_data <- temp_data %>% rename(
       "full_name" = "ContributorName",
