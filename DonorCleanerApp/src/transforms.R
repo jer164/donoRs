@@ -533,6 +533,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- temp_data %>% 
       mutate(zip = str_extract(zip, "\\d{5}")) %>% 
       filter(full_name != "Aggregated Individual Contribution") %>% 
+      filter(full_name != "Aggregated Non-Media Expenditure") %>%
       mutate_at(c("full_name", "addr1", "city"), str_to_title)
   } else if (state_fin == "ND") {
     temp_data <- temp_data %>% rename(
