@@ -175,6 +175,8 @@ ui <- navbarPage(
         ),
         selected = "Alabama",
       ),
+      checkboxInput("filter_state", "Filter State", FALSE, width = 600
+      ),
       conditionalPanel(
         condition = "input.state == 'PHIL'",
         textInput("philly_can", "Philadelphia Candidate")
@@ -197,7 +199,36 @@ ui <- navbarPage(
 
 tabPanel("State Website Links",
          dataTableOutput("statelinks")
-    )
+    ),
+
+tabPanel("File Checker",
+      
+  sidebarLayout(
+           
+           # Sidebar panel for inputs ----
+    sidebarPanel(
+      
+         fileInput("formatted_donorfile", "Select a formatted donor .csv.",
+                   multiple = TRUE,
+                   accept = c(
+                     "text/csv",
+                     "text/comma-separated-values,text/plain",
+                     ".csv")
+         ),
+         htmlOutput("test_1"),
+         htmlOutput("test_2"),
+         htmlOutput("test_3"),
+         tags$hr(),
+         selectInput("plot_type", "Select Plot Type:",
+                     choices = c("Donation Amounts", "State Distribution"),
+                     selected = "Donation Amounts")
+         
+    ),
+    mainPanel(
+      plotOutput("donorplot")
+    ),
+  )
+  )
 )
 
 server <- function(input, output) {
@@ -215,7 +246,7 @@ server <- function(input, output) {
   
   output_file_name <- reactive({
     file_name <- input$donorfile$name
-    substr(file_name, 1, nchar(file_name) - 4)
+    word(file_name, 1, sep = "\\.")
   })
 
   candidate <- reactive({
@@ -224,6 +255,21 @@ server <- function(input, output) {
 
   state_fin <- reactive({
     input$state
+  })
+  
+  ##### Create reactive dataset for download
+  
+  datasetInput <- reactive({
+    if (input$state == "PHIL") {
+      donors_df <- donor_cleaner(input$philly_can, state_fin())
+    } else {
+      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())
+    }
+    if(input$filter_state){
+      donors_df %>% filter(state == state_fin())
+    } else {
+      donors_df
+    }
   })
 
   #### Create DataTable on Output
@@ -238,16 +284,6 @@ server <- function(input, output) {
     ))
   })
 
-  ##### Create reactive dataset for download
-
-
-  datasetInput <- reactive({
-    if (input$state == "PHIL") {
-      donors_df <- donor_cleaner(input$philly_can, state_fin())
-    } else {
-      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())
-    }
-  })
 
   ###### Create download
   output$downloadData <- downloadHandler(
@@ -280,7 +316,41 @@ server <- function(input, output) {
     paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
   })
 
-# Page 2
+  ### Testing file integrity of formatted contributions
+  
+  fileCheckInput <- reactive({
+    testingfile <- read_csv(input$formatted_donorfile$datapath) %>% as_tibble()
+  })
+  
+  output$test_1 <- renderText({
+    paste("<b>List of Candidate's Contributions: </b>", all(duplicated(fileCheckInput()$first_name)))
+  }) 
+  
+  output$test_2 <- renderText({
+    paste("<b>Number of Columns: </b>", ncol(fileCheckInput()))
+  })
+  
+  output$test_3 <- renderText({
+    bad_addresses <- fileCheckInput() %>% 
+      filter((full_address == "" & addr1 == "") | (addr1 != "" & zip == "")) %>% 
+      nrow()
+    if(bad_addresses > nrow(fileCheckInput())/2){
+      paste("<b>Possible Address Issues:ues: </b>")
+    }
+    else{
+      paste("<b>Possible Address Issues: </b> No") 
+    }
+  })
+  
+  output$donorplot <- renderPlot({
+    if(input$plot_type == "Donation Amounts"){
+      hist(fileCheckInput()$donation_amount, main = "Histogram of Donations", xlab = "Amounts", 
+         ylab = "Frequency", col = "#0b0666")}
+    else if(input$plot_type == "State Distribution"){
+      state_freqs <- table(fileCheckInput()$state)
+      barplot(state_freqs, main = "State Frequencies", xlab = "State", 
+           ylab = "Count", col = "#d9a807")}
+  })
 
 }
 

@@ -1,0 +1,120 @@
+---
+title: "Donors Demo"
+author: "Jackson"
+date: "2022-5-24"
+format:
+    pdf:
+        toc: true
+        toc-depth: 2
+        toc-title: Table of contents
+        number-sections: true
+        highlight-style: github
+---
+
+## Quick Overview
+
+1.  Manual Upload vs Linked Donors
+
+2.  What the formatter actually does
+
+3.  What to look for in a file
+
+4.  Common issues and why they probably happen
+
+## Manual Upload vs Linked Donors
+
+-   Generally, we want to work with the data baked into ABBA that we know will match
+
+    -   So, in most cases, using the Linked Donors portal is the preferred option
+
+![](images/linked_demo-02.png){fig-align="center" width="720"}
+
+## Manual Upload
+
+-   Manual uploads need to happen for a few reasons
+
+    -   Not enough Linked Donors/no data for that state
+
+    -   Specific people need to be added
+
+-   It used be basically a last resort; now has been required for a lot more projects
+
+    -   CVS \[Insert state here\]
+
+-   It's not *the* preferred method because the data quality is horrendous
+
+## Enter the Formatter
+
+-   The Donor Cleaner exists for two main reasons
+
+    -   Expedite the process (main function)
+
+    -   Ensure compatibility (this has been harder...)
+
+-   In the past, every change was done manually
+
+    -   Renaming and deleting columns
+
+    -   Cleaning the actual data
+
+-   There were lots of problems with this approach
+
+## What the Tool Actually Does
+
+![](images/florida_example.png)
+
+## What the Tool Actually Does
+
+![](images/formatted.png){fig-align="center"}
+
+## What Files Do You Use?
+
+-   The tool is programmed for the columns of most state files
+
+    -   So long as you have the right state source, it will work
+
+-   However, it is not that sophisticated beyond the transformations
+
+    -   Doesn't automatically detect some errors
+
+    -   Cannot tell if you have the right file for the right person
+
+    -   If you have the wrong file, it will just give up
+
+## What Files Do You Use?
+
+-   Generally, the file you look for should meet the following criteria:
+
+    -   Comes from a government website (usually the SOS office)
+
+    -   Each row represents an individual donation
+
+    -   The file was generated from a search for **contributions to** or **receipts by**
+
+    -   The file has itemized names and addresses (zips!!) for each donation
+
+## Always Check for the Records Processed!
+
+![](images/no_processed.png){fig-align="center"}
+
+## What's Wrong With This File?
+
+![](images/joseph_manchin.png){fig-align="center"}
+
+## Common File Issues
+
+-   *A file has very few listed contributions to a very popular candidate*
+
+    -   Check it's contributions **to** that candidate and not **by** that candidate
+
+-   *The formatted file uploaded to ABBA but no records processed*
+
+    -   Look at the file to see where data is missing
+
+-   *I used a campaign finance site but the tool doesn't like the file*
+
+    -   Some states have 2-3 portals with different file schemas, so see if there is another one
+
+    -   Panic
+
+# Questions!
