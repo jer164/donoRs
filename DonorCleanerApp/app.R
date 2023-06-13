@@ -29,6 +29,7 @@ ui <- navbarPage(
       type = "text/css",
       href = "https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:700|Open+Sans:b&effect=3d-float"
     ),
+    tags$link(rel = "shortcut icon", href = "https://img.icons8.com/office/40/us-dollar-circled--v1.png", alt="us-dollar-circled--v1", type = "image/x-icon"),
     tags$style(
       ".shiny-output-error { visibility: hidden; }",
       ".shiny-output-error:before { visibility: hidden; }",
