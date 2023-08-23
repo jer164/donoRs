@@ -12,6 +12,7 @@ library(glue)
 library(DT)
 library(reticulate)
 library(XML)
+library(shinycssloaders)
 
 ### options
 
@@ -125,12 +126,14 @@ ui <- navbarPage(
             "Detroit" = "DET",
             "Los Angeles" = "LA_C",
             "New York City" = "NYC",
-            "Philadelphia" = "PHIL"
+            "Philadelphia" = "PHIL",
+            "Washington, D.C." = "DC"
           ),
           `State` = list(
             "Alabama" = "AL",
             "Alaska" = "AK",
             "Arizona" = "AZ",
+            "Arkansas" = "AR",
             "California" = "CA",
             "Colorado" = "CO",
             "Connecticut" = "CT",
@@ -190,12 +193,15 @@ ui <- navbarPage(
     ),
 
     # Main panel for displaying outputs ----
-    mainPanel(
+    mainPanel(withSpinner(type = getOption("spinner.type", default = 4),
+                          image = "https://media.tenor.com/k-PfH9O4EpcAAAAj/money-cash.gif",
+                          image.width = 100,
+                          image.height = 100,
 
       # Output: Data file ----
       dataTableOutput("contents")
     )
-  )
+  ))
 ),
 
 tabPanel("State Website Links",

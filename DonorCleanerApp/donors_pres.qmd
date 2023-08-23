@@ -3,39 +3,52 @@ title: "Donors Demo"
 author: "Jackson"
 date: "2022-5-24"
 format:
-    pdf:
-        toc: true
-        toc-depth: 2
-        toc-title: Table of contents
-        number-sections: true
-        highlight-style: github
+  revealjs:
+    incremental: true
 ---
 
 ## Quick Overview
 
+<div>
+
+::: nonincremental
 1.  Manual Upload vs Linked Donors
 
 2.  What the formatter actually does
 
 3.  What to look for in a file
 
-4.  Common issues and why they probably happen
+4.  Changing file extensions
+
+5.  Common issues and why they probably happen
+:::
+
+</div>
 
 ## Manual Upload vs Linked Donors
 
 -   Generally, we want to work with the data baked into ABBA that we know will match
 
+    ::: incremental
     -   So, in most cases, using the Linked Donors portal is the preferred option
+    -   The data is refreshed more frequently
+    -   We *usually* know ABBA will like it
+    -   It saves time
+    :::
+
+## Linked Donors
 
 ![](images/linked_demo-02.png){fig-align="center" width="720"}
 
-## Manual Upload
+## Upload
 
 -   Manual uploads need to happen for a few reasons
 
     -   Not enough Linked Donors/no data for that state
 
     -   Specific people need to be added
+
+    -   You want to include people from someone else's campaign for some reason
 
 -   It used be basically a last resort; now has been required for a lot more projects
 
@@ -92,6 +105,16 @@ format:
     -   The file was generated from a search for **contributions to** or **receipts by**
 
     -   The file has itemized names and addresses (zips!!) for each donation
+
+## Let's Try It Out!
+
+## Changing File Extensions
+
+-   There are some sites that export a different format from what they claim
+
+-   The website will say "Export CSV" or "Export Excel" and then give you absolute junk
+
+## Kansas... *Michigan*...
 
 ## Always Check for the Records Processed!
 
