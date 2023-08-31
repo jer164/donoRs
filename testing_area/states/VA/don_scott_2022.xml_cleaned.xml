@@ -1,0 +1,4726 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sbe.virginia.gov ContributionReport.xsd">
+  <ReportHeader>
+    <CommitteeCode>CC-19-00758</CommitteeCode>
+    <CommitteeName>Friends Of Don Scott</CommitteeName>
+    <ReportYear>2022</ReportYear>
+    <Address>
+      <Line1>355 Crawford Street</Line1>
+      <Line2>704</Line2>
+      <City>Portsmouth</City>
+      <State>VA</State>
+      <ZipCode>23704</ZipCode>
+    </Address>
+    <FilingDate>2023-01-17</FilingDate>
+    <StartDate>2022-07-01</StartDate>
+    <EndDate>2022-12-31</EndDate>
+    <SubmitterPhone>7033146405</SubmitterPhone>
+    <SubmitterEmail>kristinadoggetthagen@gmail.com</SubmitterEmail>
+    <FilingType>Report</FilingType>
+    <IsFinalReport>false</IsFinalReport>
+    <IsAmendment>false</IsAmendment>
+    <AmendedReportNumber>0</AmendedReportNumber>
+    <NoActivity>false</NoActivity>
+    <BalanceLastReportingPeriod>311783.58</BalanceLastReportingPeriod>
+    <ElectionCycle>11/2023</ElectionCycle>
+    <OfficeSought>Member House of Delegates</OfficeSought>
+    <District>House of Delegates - 80th District</District>
+  </ReportHeader>
+  <ScheduleA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>309 WBS</LastName>
+        <Address>
+          <Line1>802 Manteo Street</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23507</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>LLC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>32BJ United American Dream Fund</LastName>
+        <Address>
+          <Line1>25 W 18th St</Line1>
+          <Line2>F1 5</Line2>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10011</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Service/Opportunity Workers</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>New York</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Abbott Laboratories</LastName>
+        <Address>
+          <Line1>100 Abbott Park Road</Line1>
+          <City>Abbott Park</City>
+          <State>IL</State>
+          <ZipCode>60064</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Abbott Park, IL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Advansix Inc</LastName>
+        <Address>
+          <Line1>300 Kimball Drive</Line1>
+          <Line2>Suite 101</Line2>
+          <City>Parsippany</City>
+          <State>NJ</State>
+          <ZipCode>07054</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Chemicals/Plastics</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Parsippany, NJ</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Altria Client Services LLC</LastName>
+        <Address>
+          <Line1>PO Box 85088</Line1>
+          <City>richmond</City>
+          <State>VA</State>
+          <ZipCode>23285</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Tobacco</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-15</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Amazon.com Services</LastName>
+        <Address>
+          <Line1>PO Box 80863</Line1>
+          <City>Seattle</City>
+          <State>WA</State>
+          <ZipCode>98108</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Information Technology</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Seattle, WA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>American Traffic Solutions</LastName>
+        <Address>
+          <Line1>1150 North Alma School Rd</Line1>
+          <City>Mesa</City>
+          <State>AZ</State>
+          <ZipCode>85201</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Traffic</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Mesa, AZ</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Amgen Inc</LastName>
+        <Address>
+          <Line1>5845 Richmond Hwy</Line1>
+          <Line2>Ste 820</Line2>
+          <City>Alexandria</City>
+          <State>VA</State>
+          <ZipCode>22303</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Alexandria, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Anheuser-Busch</LastName>
+        <Address>
+          <Line1>1201 Pennsylvania Avenue NW</Line1>
+          <Line2>Suite 1300</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20004</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverages</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>St Louis, MO</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Anthem Blue Cross Blue Shield</LastName>
+        <Address>
+          <Line1>3075 Vandercar Way</Line1>
+          <City>Cincinatti</City>
+          <State>OH</State>
+          <ZipCode>45209</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Health Insurance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Cincinatti, OH</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-19</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>ARDA-ROC PAC</LastName>
+        <Address>
+          <Line1>1201 15 St NW</Line1>
+          <Line2>Suite 400</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20005</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Resorts</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Associated General Contractors</LastName>
+        <Address>
+          <Line1>11950 Nuckols Road</Line1>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23059</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Contractors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Associated General Contractors</LastName>
+        <Address>
+          <Line1>11950 Nuckols Road</Line1>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23059</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Contractors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Associated General Contractors</LastName>
+        <Address>
+          <Line1>11950 Nuckols Road</Line1>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23059</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Contractors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Robert</FirstName>
+        <LastName>Aston</LastName>
+        <Address>
+          <Line1>4417 Glencove Dr</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23703</ZipCode>
+        </Address>
+        <NameOfEmployer>Towne Bank</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Chair</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>At&amp;T Services Inc</LastName>
+        <Address>
+          <Line1>1120 20th St NW</Line1>
+          <Line2>1000</Line2>
+          <City>DC</City>
+          <State>DC</State>
+          <ZipCode>20036</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>telephone</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth, Va</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>At&amp;T Services Inc</LastName>
+        <Address>
+          <Line1>1120 20th St NW</Line1>
+          <Line2>1000</Line2>
+          <City>DC</City>
+          <State>DC</State>
+          <ZipCode>20036</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>telephone</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth, Va</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>750.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Baltimore DC Metro Building and Construction Trades Council</LastName>
+        <Address>
+          <Line1>5829 Allentown Road</Line1>
+          <City>Camp Springs</City>
+          <State>MD</State>
+          <ZipCode>20746</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Labor Union</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Camp Springs, MD</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Baltimore Washington Construction &amp; Public Employees Laborers PAC</LastName>
+        <Address>
+          <Line1>5627 Allentown Road</Line1>
+          <Line2>Suite 206</Line2>
+          <City>Camp Springs</City>
+          <State>MD</State>
+          <ZipCode>20746</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Labor Union</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Camp Springs, MD</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>10000.00</Amount>
+      <TotalToDate>10000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Dave</FirstName>
+        <LastName>Belote</LastName>
+        <Address>
+          <Line1>2248 Rose Hall Dr</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23454</ZipCode>
+        </Address>
+        <NameOfEmployer>DARE Strategies LLC</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Managing Partner &amp; CEO</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Virginia Beach, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-15</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Betting on VA Jobs</LastName>
+        <Address>
+          <Line1>PO Box 71683</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23255</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Angela</FirstName>
+        <LastName>Bezik</LastName>
+        <Address>
+          <Line1>One Columbus Center</Line1>
+          <Line2>Suite 600-612</Line2>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23462</ZipCode>
+        </Address>
+        <NameOfEmployer>Principle Advantage LTD</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Lobbyist</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Virginia Beach, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-31</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Ronnie</FirstName>
+        <LastName>Brown</LastName>
+        <Address>
+          <Line1>806 Knollwood Court</Line1>
+          <City>Chesapeake</City>
+          <State>VA</State>
+          <ZipCode>23320</ZipCode>
+        </Address>
+        <NameOfEmployer>Not Employedd</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Not Employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chesapeake, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>125.00</Amount>
+      <TotalToDate>125.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Capital One Services</LastName>
+        <Address>
+          <Line1>1950 Roland Clarke Place</Line1>
+          <Line2>300</Line2>
+          <City>Reston</City>
+          <State>VA</State>
+          <ZipCode>20191</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Banks</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Reston, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-19</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Capital Results</LastName>
+        <Address>
+          <Line1>50 Pear St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23223</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>CareFirst BlueChoice</LastName>
+        <Address>
+          <Line1>840 First Street</Line1>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20065</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical Plans</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>NE Washington, D.C.</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Cedar Mountain Stone Group</LastName>
+        <Address>
+          <Line1>2105 S Broadway</Line1>
+          <City>Pine City</City>
+          <State>NY</State>
+          <ZipCode>14871</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Quarries</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Mitchells, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Cedar Mountain Stone Group</LastName>
+        <Address>
+          <Line1>2105 S Broadway</Line1>
+          <City>Pine City</City>
+          <State>NY</State>
+          <ZipCode>14871</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Quarries</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Mitchells, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Chemung Contracting Corp</LastName>
+        <Address>
+          <Line1>2105 S Broadway</Line1>
+          <City>Pine City</City>
+          <State>NY</State>
+          <ZipCode>14871</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Highway Contractors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Gainesville, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Chemung Contracting Corp</LastName>
+        <Address>
+          <Line1>2105 S Broadway</Line1>
+          <City>Pine City</City>
+          <State>NY</State>
+          <ZipCode>14871</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Highway Contractors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Gainesville, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Cigna Corp Employee Pac</LastName>
+        <Address>
+          <Line1>1601 Chestnut St</Line1>
+          <City>Philadelphia</City>
+          <State>PA</State>
+          <ZipCode>19192</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Global Heath Services</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Philadelphia, PA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>750.00</Amount>
+      <TotalToDate>750.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Coca Cola</LastName>
+        <Address>
+          <Line1>4100 Coca Cola Plaza</Line1>
+          <City>Charlotte</City>
+          <State>NC</State>
+          <ZipCode>28211</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Food &amp; Beverage</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>comcast corporation</LastName>
+        <Address>
+          <Line1>1701 JFK Blvd</Line1>
+          <City>Philadelphia</City>
+          <State>PA</State>
+          <ZipCode>19103</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Communication</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Philadelphia PA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-28</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Commercial Development PAC</LastName>
+        <Address>
+          <Line1>1729 King Street</Line1>
+          <Line2>Suite 410</Line2>
+          <City>Alexandria</City>
+          <State>VA</State>
+          <ZipCode>22314</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Unknown</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Commercial Development PAC</LastName>
+        <Address>
+          <Line1>1729 King Street</Line1>
+          <Line2>Suite 410</Line2>
+          <City>Alexandria</City>
+          <State>VA</State>
+          <ZipCode>22314</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Unknown</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>COmmunity Owned Power PAC</LastName>
+        <Address>
+          <Line1>4201 Dominion Blvd</Line1>
+          <Line2>Suite 101</Line2>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23060</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Electric Utilities</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Taikein</FirstName>
+        <LastName>Cooper</LastName>
+        <Address>
+          <Line1>720 S Laurel St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23220</ZipCode>
+        </Address>
+        <NameOfEmployer>Nonprofit</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Nonprofit executive</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-15</TransactionDate>
+      <Amount>125.00</Amount>
+      <TotalToDate>125.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <Prefix>Dr</Prefix>
+        <FirstName>James</FirstName>
+        <MiddleName>v</MiddleName>
+        <LastName>Cornetta</LastName>
+        <Address>
+          <Line1>226 Fort Ln</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+        <NameOfEmployer>Sentara</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Doctor</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-31</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Cozen O'Connor</LastName>
+        <Address>
+          <Line1>1021 E Cary Street</Line1>
+          <Line2>Suite 1420</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Ben</FirstName>
+        <LastName>Davenport</LastName>
+        <Address>
+          <Line1>PO Box 1069</Line1>
+          <City>Chatham</City>
+          <State>VA</State>
+          <ZipCode>24531</ZipCode>
+        </Address>
+        <NameOfEmployer>First Piedmont Corp</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Waste Disposal/Landfills</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chatham, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Davita</LastName>
+        <Address>
+          <Line1>PO Box 4328</Line1>
+          <City>Federal Way</City>
+          <State>WA</State>
+          <ZipCode>98063</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical Labs/Testing</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Dominion Energy PAC</LastName>
+        <Address>
+          <Line1>P.O. Box 26666</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23261</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-25</TransactionDate>
+      <Amount>12500.00</Amount>
+      <TotalToDate>25000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Dominion Energy PAC</LastName>
+        <Address>
+          <Line1>P.O. Box 26666</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23261</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-19</TransactionDate>
+      <Amount>40000.00</Amount>
+      <TotalToDate>65000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Dominion Energy PAC</LastName>
+        <Address>
+          <Line1>P.O. Box 26666</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23261</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-26</TransactionDate>
+      <Amount>10000.00</Amount>
+      <TotalToDate>75000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Dominion Energy PAC</LastName>
+        <Address>
+          <Line1>P.O. Box 26666</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23261</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-07</TransactionDate>
+      <Amount>25000.00</Amount>
+      <TotalToDate>100000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Kaci</FirstName>
+        <LastName>Easley</LastName>
+        <Address>
+          <Line1>219 N 19th Street Unit 41</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23223</ZipCode>
+        </Address>
+        <NameOfEmployer>Dominion Energy</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Lobbyist</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-03</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Franklin</FirstName>
+        <LastName>Edmondson</LastName>
+        <Address>
+          <Line1>PO Box 934</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23703</ZipCode>
+        </Address>
+        <NameOfEmployer>City of Portsmouth</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Commissioner of the Revenue</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Eli Lilly and Company</LastName>
+        <Address>
+          <Line1>Lilly Corporate Center Drop Code 1870</Line1>
+          <City>Indianapolis</City>
+          <State>IN</State>
+          <ZipCode>46285</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Indianapolis, IN</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Engineering Companies of Virginia</LastName>
+        <Address>
+          <Line1>8600 Mayland Dr</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23294</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Engineers</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Exacta Systems LLC</LastName>
+        <Address>
+          <Line1>1123 Gateway Blvd</Line1>
+          <City>Boynton Beach</City>
+          <State>VA</State>
+          <ZipCode>33425</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Gaming</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Boynton Beach, FL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Ramin</FirstName>
+        <LastName>Fatehi</LastName>
+        <Address>
+          <Line1>511 Mayflower Rd</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23508</ZipCode>
+        </Address>
+        <NameOfEmployer>Norfolk Commonwewalth's Attorney's Office</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Lawyer</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-30</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>FIBER Virginia, Inc</LastName>
+        <Address>
+          <Line1>4201 Dominion Blvd</Line1>
+          <Line2>Suite 101</Line2>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23060</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Broadband</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Tim</FirstName>
+        <LastName>Foley</LastName>
+        <Address>
+          <Line1>77 Seventh Ave 21p</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10011</ZipCode>
+        </Address>
+        <NameOfEmployer>Self</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Developer</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>New York, NY</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-25</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Paul</FirstName>
+        <LastName>Fraim</LastName>
+        <Address>
+          <Line1>150 Boush St Ste 601</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23510</ZipCode>
+        </Address>
+        <NameOfEmployer>Fraim &amp; Fiorella</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Attorney</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Kimberly</FirstName>
+        <LastName>Frazier</LastName>
+        <Address>
+          <Line1>1103 Lands End Dr</Line1>
+          <City>Chesapeake</City>
+          <State>VA</State>
+          <ZipCode>23320</ZipCode>
+        </Address>
+        <NameOfEmployer>Enjoying Leadership &amp; Life Coaching</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Leadership Coach</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-10</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Freedom Virginia</LastName>
+        <Address>
+          <Line1>PO Box 10102</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23513</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Advocacy</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-17</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>GlaxoSmithKline</LastName>
+        <Address>
+          <Line1>Five Moore Drive</Line1>
+          <City>Research Triangle Park</City>
+          <State>NC</State>
+          <ZipCode>27709</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Research Triangle Park, NC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>GM PAC</LastName>
+        <Address>
+          <Line1>25 Massachusetts Abe, NW</Line1>
+          <Line2>Suite 400</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20001</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Automotive</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>750.00</Amount>
+      <TotalToDate>750.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Ulysses</FirstName>
+        <LastName>Gray</LastName>
+        <Address>
+          <Line1>909 Audubon Circle</Line1>
+          <City>Chesapeake</City>
+          <State>VA</State>
+          <ZipCode>23320</ZipCode>
+        </Address>
+        <NameOfEmployer>ICG</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>President</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chesapeake, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Greater VA Carpenters PEC</LastName>
+        <Address>
+          <Line1>10238 Sycamore Dr</Line1>
+          <City>Ashland</City>
+          <State>VA</State>
+          <ZipCode>23005</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Labor Union</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Ashland, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>7500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Green Ridge Recycling &amp; Disposal Facility</LastName>
+        <Address>
+          <Line1>4 Enterprise Ave</Line1>
+          <City>Clifton Park</City>
+          <State>NY</State>
+          <ZipCode>12065</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Waste Management</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Clifton Park, NY</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>HBAV Build PAC</LastName>
+        <Address>
+          <Line1>1051 E. Cary St</Line1>
+          <Line2>Suite 1400</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Construction</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-31</TransactionDate>
+      <Amount>10000.00</Amount>
+      <TotalToDate>10000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>HCA for Good Government</LastName>
+        <Address>
+          <Line1>901 E Cary Street</Line1>
+          <Line2>2100</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Headwaters Resort PAC</LastName>
+        <Address>
+          <Line1>112 Granby Street</Line1>
+          <Line2>Suite 400</Line2>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23510</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Gaming</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Highland Electric</LastName>
+        <Address>
+          <Line1>PO Box 516</Line1>
+          <City>Hamilton</City>
+          <State>MA</State>
+          <ZipCode>01982</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Electric Vehicles</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Hamilton, MA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Hoffman Beverage Company</LastName>
+        <Address>
+          <Line1>4105 S. Military Highway</Line1>
+          <City>Chesapeake</City>
+          <State>VA</State>
+          <ZipCode>23321</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Distributorrs</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chesapeake, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>William</FirstName>
+        <LastName>Hopkins</LastName>
+        <Address>
+          <Line1>PO Box 13366</Line1>
+          <City>Roanoke</City>
+          <State>VA</State>
+          <ZipCode>24033</ZipCode>
+        </Address>
+        <NameOfEmployer>Martin Hopkins &amp; Lemon PC</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Attorney</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Roanoke, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Alfred</FirstName>
+        <LastName>Howard</LastName>
+        <Address>
+          <Line1>5301 Providence Rd Ste 40</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23464</ZipCode>
+        </Address>
+        <NameOfEmployer>Self</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Therapist</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Virginia Beach, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>125.00</Amount>
+      <TotalToDate>125.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>huntington ingalls industries</LastName>
+        <Address>
+          <Line1>4101 washington avenue</Line1>
+          <City>newport news</City>
+          <State>VA</State>
+          <ZipCode>23607</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>ship builder</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>newport news</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Hunton Andrews Kurth</LastName>
+        <Address>
+          <Line1>951 East Byrd St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Hunton Andrews Kurth</LastName>
+        <Address>
+          <Line1>951 East Byrd St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>4646.10</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>IBEW PAC Voluntary Fund</LastName>
+        <Address>
+          <Line1>900 Seventh Street NW</Line1>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20001</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Labor Union</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-25</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>IUPAT Political Action Together Legislative Education Committee</LastName>
+        <Address>
+          <Line1>7234 Parkway Drive</Line1>
+          <City>Hanover</City>
+          <State>MD</State>
+          <ZipCode>21076</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Labor Union</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Hanover, MD</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Johnson Brothers Service Distributing</LastName>
+        <Address>
+          <Line1>8397 Paris Street</Line1>
+          <City>Lorton</City>
+          <State>VA</State>
+          <ZipCode>22079</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Distributors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Lorton, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>David</FirstName>
+        <LastName>Jones</LastName>
+        <Address>
+          <Line1>700 13th St NW Suite 200</Line1>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20005</ZipCode>
+        </Address>
+        <NameOfEmployer>Capitol Counsel</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Partner</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-22</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>JPMO Strategies</LastName>
+        <Address>
+          <Line1>3913 Seminary Ave</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23227</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>JPMorgan Chase &amp; Co PAC</LastName>
+        <Address>
+          <Line1>601 Pennsylvania Ave NW</Line1>
+          <Line2>7th Floor</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20004</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Investment Bankers/Venture Capital</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Shannon</FirstName>
+        <LastName>Kane</LastName>
+        <Address>
+          <Line1>1852 Saville Garden Ct</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23453</ZipCode>
+        </Address>
+        <NameOfEmployer>Dominion Energy</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>External Affairs</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-24</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Harry</FirstName>
+        <LastName>Lester</LastName>
+        <Address>
+          <Line1>4139 First Court Road</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23455</ZipCode>
+        </Address>
+        <NameOfEmployer>None</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Retired</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Virginia Beach, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>M Price Distributing Co</LastName>
+        <Address>
+          <Line1>1 Budweiser St</Line1>
+          <City>Hampton</City>
+          <State>VA</State>
+          <ZipCode>23661</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Distributors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Hampton, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Maritime Issues Council</LastName>
+        <Address>
+          <Line1>PO Box 3487</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23514</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Association</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk Va</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Vincent</FirstName>
+        <LastName>Mastracco</LastName>
+        <Address>
+          <Line1>PO Box 3697</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23514</ZipCode>
+        </Address>
+        <NameOfEmployer>Kaufman &amp; Canoles</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Attorney</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Rob</FirstName>
+        <LastName>McCartney</LastName>
+        <Address>
+          <Line1>3101 Sharpie Court</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23456</ZipCode>
+        </Address>
+        <NameOfEmployer>Self</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Social Worker</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Virginia Beach, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>125.00</Amount>
+      <TotalToDate>125.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>McGuire Woods LLP</LastName>
+        <Address>
+          <Line1>800 East Canal St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Public Affairs</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-15</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Medical Society of Virginia</LastName>
+        <Address>
+          <Line1>2924 Emerywood Pkwy Ste 300</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23294</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Physicians</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Henrico, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Merck Sharp &amp; Dohme LLC</LastName>
+        <Address>
+          <Line1>126 East Lincoln Ave</Line1>
+          <Line2>PO Box 2000</Line2>
+          <City>Rahway</City>
+          <State>NJ</State>
+          <ZipCode>07065</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Rahway, NJ</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Metis Services</LastName>
+        <Address>
+          <Line1>1819 Electric Road</Line1>
+          <Line2>Suite C</Line2>
+          <City>Roanoke</City>
+          <State>VA</State>
+          <ZipCode>24018</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Financial Services</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Roanoke, Va</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Metro Virginia PAC M301</LastName>
+        <Address>
+          <Line1>1050 17th Street NW</Line1>
+          <Line2>Suite 300</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20036</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Ray</FirstName>
+        <LastName>Miles</LastName>
+        <Address>
+          <Line1>135 Kings Way</Line1>
+          <City>Hampton</City>
+          <State>VA</State>
+          <ZipCode>23669</ZipCode>
+        </Address>
+        <NameOfEmployer>RWI</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Self employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Hampton, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-26</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Thomas</FirstName>
+        <LastName>Minnick</LastName>
+        <Address>
+          <Line1>1336 Robert’s Bay Lane</Line1>
+          <City>Sarasota</City>
+          <State>FL</State>
+          <ZipCode>34252</ZipCode>
+        </Address>
+        <NameOfEmployer>Not Employed</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Not Employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Sarasota, FL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-31</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Molson Coors</LastName>
+        <Address>
+          <Line1>PO Box 462</Line1>
+          <City>Milwaukee</City>
+          <State>WI</State>
+          <ZipCode>53201</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverages</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Milwaukee, WI</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Mondelez Global</LastName>
+        <Address>
+          <Line1>975 F St NW</Line1>
+          <Line2>Ste 540</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20004</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Food Processors/Distributors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>750.00</Amount>
+      <TotalToDate>750.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Charlene</FirstName>
+        <LastName>Morring</LastName>
+        <Address>
+          <Line1>3219 Shelter Cove Court</Line1>
+          <City>Suffolk</City>
+          <State>VA</State>
+          <ZipCode>23435</ZipCode>
+        </Address>
+        <NameOfEmployer>Morring Law</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Self Employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Charlene</FirstName>
+        <LastName>Morring</LastName>
+        <Address>
+          <Line1>3219 Shelter Cove Court</Line1>
+          <City>Suffolk</City>
+          <State>VA</State>
+          <ZipCode>23435</ZipCode>
+        </Address>
+        <NameOfEmployer>Morring Law</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Self Employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-17</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Motorola Solutiions</LastName>
+        <Address>
+          <Line1>601 Pennsylvania Ave, NW</Line1>
+          <Line2>Suite 675 North</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20004</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Telecom</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>John</FirstName>
+        <LastName>Myers</LastName>
+        <Address>
+          <Line1>11429 Barrington Bridge court</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23233</ZipCode>
+        </Address>
+        <NameOfEmployer>Not Employed</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Not Employed</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Henrico, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-14</TransactionDate>
+      <Amount>3000.00</Amount>
+      <TotalToDate>3000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>National Mentor Holdings</LastName>
+        <Address>
+          <Line1>313 Congress Street</Line1>
+          <Line2>5th Floor</Line2>
+          <City>Boston</City>
+          <State>MA</State>
+          <ZipCode>02210</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Mental Health</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Boston, MA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Norfolk Southern</LastName>
+        <Address>
+          <Line1>411 E. Franklin St</Line1>
+          <Line2>Suite 501</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Transportation</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Northern Virginia Chamber of Commerce</LastName>
+        <Address>
+          <Line1>7900 Westpark Dr</Line1>
+          <Line2>Ste A550</Line2>
+          <City>Tysons</City>
+          <State>VA</State>
+          <ZipCode>22102</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pro-Business/Economic Development</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Tysons, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>NOVEC</LastName>
+        <Address>
+          <Line1>PO Box 2710</Line1>
+          <City>Manassas</City>
+          <State>VA</State>
+          <ZipCode>20108</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Electric Cooperatives</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Manassas, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Old Dominion Highway PAC</LastName>
+        <Address>
+          <Line1>432 McLaws Circle</Line1>
+          <City>Williamsburg</City>
+          <State>VA</State>
+          <ZipCode>23185</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Contractor Association</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Old Dominion Highway PAC</LastName>
+        <Address>
+          <Line1>432 McLaws Circle</Line1>
+          <City>Williamsburg</City>
+          <State>VA</State>
+          <ZipCode>23185</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Contractor Association</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>James</FirstName>
+        <LastName>Parrish</LastName>
+        <Address>
+          <Line1>1813 Rosewood Ave</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23220</ZipCode>
+        </Address>
+        <NameOfEmployer>Virginia Values Coalition</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Director</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>125.00</Amount>
+      <TotalToDate>125.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Pharmaceutical Care Management Association</LastName>
+        <Address>
+          <Line1>325 7th St NW</Line1>
+          <Line2>9th Floor</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20004</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Pharmaceuticals Research &amp; Manufacturers of America</LastName>
+        <Address>
+          <Line1>919 E. Main Street</Line1>
+          <Line2>Ste 1000</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceutical Research</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>4000.00</Amount>
+      <TotalToDate>4000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Premium Distributors of VA</LastName>
+        <Address>
+          <Line1>15001 Northridge Dr</Line1>
+          <City>Chantilly</City>
+          <State>VA</State>
+          <ZipCode>20151</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Distributors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chantilly, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Publix</LastName>
+        <Address>
+          <Line1>PO Box 407</Line1>
+          <City>Lakeland</City>
+          <State>FL</State>
+          <ZipCode>33802</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Grocery Stores</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Lakeland, FL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>750.00</Amount>
+      <TotalToDate>750.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Quest Diagnostics</LastName>
+        <Address>
+          <Line1>500 Plaza Drive</Line1>
+          <City>Secaucus</City>
+          <State>NJ</State>
+          <ZipCode>07094</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical Labs/Testing</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Secaucus, NJ</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Raytheon Technologies</LastName>
+        <Address>
+          <Line1>1100 Wilson Blvd</Line1>
+          <Line2>Ste 1500</Line2>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22209</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Aerospace and intelligence</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Arlington</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1250.00</Amount>
+      <TotalToDate>1250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Raytheon Technologies</LastName>
+        <Address>
+          <Line1>1100 Wilson Blvd</Line1>
+          <Line2>Ste 1500</Line2>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22209</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Aerospace and intelligence</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Arlington</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>1250.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Realtors Political Action Committee of VA</LastName>
+        <Address>
+          <Line1>10231 Telegraph Rd</Line1>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23059</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Real Estate</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Reed Smith LLP</LastName>
+        <Address>
+          <Line1>901 E Byrd St</Line1>
+          <Line2>STE 1900</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>3000.00</Amount>
+      <TotalToDate>3000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>RELX Inc</LastName>
+        <Address>
+          <Line1>313 Washington St</Line1>
+          <Line2>#400</Line2>
+          <City>Newton</City>
+          <State>MA</State>
+          <ZipCode>02458</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Information Technology</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Newton, MA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Republic National Distributing Company, LLC</LastName>
+        <Address>
+          <Line1>One National Drive SW</Line1>
+          <City>Atlanta</City>
+          <State>GA</State>
+          <ZipCode>30336</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Distributors</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Atlanta, GA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Retirement Unlimited</LastName>
+        <Address>
+          <Line1>2847 Penn Forest Blvd</Line1>
+          <Line2>Suite 201</Line2>
+          <City>Roanoke</City>
+          <State>VA</State>
+          <ZipCode>24018</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Nursing Homes</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Roanoke, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Revenue Based Finance Coalition</LastName>
+        <Address>
+          <Line1>PH Box 651355</Line1>
+          <City>Potomac Falls</City>
+          <State>VA</State>
+          <ZipCode>20165</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Finance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Potomac Falls, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Reynolds</LastName>
+        <Address>
+          <Line1>401 N Main St Winston</Line1>
+          <City>Salem</City>
+          <State>NC</State>
+          <ZipCode>27101</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Tobacco</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Salem, NC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Rivers Portsmouth Gaming LLC</LastName>
+        <Address>
+          <Line1>900 N Michigan Ave #1600</Line1>
+          <City>Chicago</City>
+          <State>IL</State>
+          <ZipCode>60611</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Gaming</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Chicago, IL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>15000.00</Amount>
+      <TotalToDate>15000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Walton</FirstName>
+        <LastName>Shepherd</LastName>
+        <Address>
+          <Line1>2105 M Street</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23223</ZipCode>
+        </Address>
+        <NameOfEmployer>Natural Resources Defense Council</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Attorney</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>600.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Smithfield Foods, Inc</LastName>
+        <Address>
+          <Line1>4225 Naperville Rd</Line1>
+          <Line2>Suite 600</Line2>
+          <City>Lisle</City>
+          <State>IL</State>
+          <ZipCode>60532</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Food</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Sports Betting Alliance</LastName>
+        <Address>
+          <Line1>5109 82nd St</Line1>
+          <Line2>Ste 7-1111</Line2>
+          <City>Lubbock</City>
+          <State>TX</State>
+          <ZipCode>79424</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Gaming</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Lubbock, TX</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Strata Clean Energy</LastName>
+        <Address>
+          <Line1>800 Taylor St</Line1>
+          <Line2>Ste 200</Line2>
+          <City>Durham</City>
+          <State>NC</State>
+          <ZipCode>27701</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Solar Energy</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Durham, NC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Strategic Funding - Kapitus</LastName>
+        <Address>
+          <Line1>120 West 45th Street</Line1>
+          <Line2>4th Floor</Line2>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10036</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Miscellaneous Financial Services</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>New York, NY</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Sunovion</LastName>
+        <Address>
+          <Line1>84 Waterford Drive</Line1>
+          <City>Marlborough</City>
+          <State>MA</State>
+          <ZipCode>01752</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Marlborough, MA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>T-Mobile</LastName>
+        <Address>
+          <Line1>12920 SE 38th Street</Line1>
+          <City>Bellevue</City>
+          <State>WA</State>
+          <ZipCode>96006</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Telecommunications</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Bellevue, WA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Tenaska Virginia Partners</LastName>
+        <Address>
+          <Line1>14302 FNB Parkway</Line1>
+          <City>Omaha</City>
+          <State>NE</State>
+          <ZipCode>68154</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Electric Utilities</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Omaha, NE</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>The Geo Group Inc</LastName>
+        <Address>
+          <Line1>4955 Technology Way</Line1>
+          <City>Boca Raton</City>
+          <State>FL</State>
+          <ZipCode>33431</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portsmouth, Va</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Truist Virginia PAC</LastName>
+        <Address>
+          <Line1>1001 Semmes Ave</Line1>
+          <Line2>5th floor</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23224</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Financial</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-15</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Trulieve</LastName>
+        <Address>
+          <Line1>24671 US Highway 19 N</Line1>
+          <City>Clearwater</City>
+          <State>FL</State>
+          <ZipCode>33763</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical Cannabis</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Clearwater, FL</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>ULT Political Action Committee</LastName>
+        <Address>
+          <Line1>5201 Forest Hill Ave</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23225</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>United</LastName>
+        <Address>
+          <Line1>Po Box 4607 - HSCAP</Line1>
+          <City>Houston</City>
+          <State>TX</State>
+          <ZipCode>77210</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Airlines</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Houston, TX</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>UnitedHealth Group Inc</LastName>
+        <Address>
+          <Line1>PO Box 1459</Line1>
+          <City>Minneapolis</City>
+          <State>MN</State>
+          <ZipCode>55440</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Insurance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Minneapolis, MN</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Urban One</LastName>
+        <Address>
+          <Line1>1010 Wayne Avenue</Line1>
+          <Line2>14th Floor</Line2>
+          <City>Silver Spring</City>
+          <State>MD</State>
+          <ZipCode>20910</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Gaming</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Silver Spring, MD</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-21</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>USAA</LastName>
+        <Address>
+          <Line1>74 E Main Street #229</Line1>
+          <City>Lititz</City>
+          <State>PA</State>
+          <ZipCode>17543</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Insurance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>San Antonio, TX</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>VA Academy of Clinical Psychologist</LastName>
+        <Address>
+          <Line1>118 N 8th St</Line1>
+          <City>RRichmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Mental Health</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>VA Dental Association</LastName>
+        <Address>
+          <Line1>3460 Maryland Court</Line1>
+          <Line2>Suite 110</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23233</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-25</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Va Wine Wholesalers</LastName>
+        <Address>
+          <Line1>PO Box 170</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23218</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverage</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Throughout Virginia</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>VEA Fund</LastName>
+        <Address>
+          <Line1>116 S 3rd Street</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Public School Teachers/Staff</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Verizon</LastName>
+        <Address>
+          <Line1>1300 I Street, NW</Line1>
+          <Line2>Ste 500 E</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20005</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Communication/ Network</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>7500.00</Amount>
+      <TotalToDate>7500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Vertex Pharmaceuticals</LastName>
+        <Address>
+          <Line1>50 Northern Ave</Line1>
+          <City>Boston</City>
+          <State>MA</State>
+          <ZipCode>02210</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Pharmaceuticals</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Boston, MA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Asian American Store Owners Association PAC</LastName>
+        <Address>
+          <Line1>919 E Main Street</Line1>
+          <Line2>Suite 1130</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Retail</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia association of health plans PAC</LastName>
+        <Address>
+          <Line1>1111 e. main street</Line1>
+          <Line2>910</Line2>
+          <City>richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>healthcare</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Automobile and Truck Dealers PAC</LastName>
+        <Address>
+          <Line1>1800 West Grace St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23320</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Transportation</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>15000.00</Amount>
+      <TotalToDate>15000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia bank PAC</LastName>
+        <Address>
+          <Line1>4490 cox rd</Line1>
+          <City>glen allen</City>
+          <State>VA</State>
+          <ZipCode>23060</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>finance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>2500.00</Amount>
+      <TotalToDate>2500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia bank PAC</LastName>
+        <Address>
+          <Line1>4490 cox rd</Line1>
+          <City>glen allen</City>
+          <State>VA</State>
+          <ZipCode>23060</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>finance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>7500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Beer Wholesalers Assocation</LastName>
+        <Address>
+          <Line1>17 East Cary St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverage</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-21</TransactionDate>
+      <Amount>10000.00</Amount>
+      <TotalToDate>10739.16</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Beverage Association</LastName>
+        <Address>
+          <Line1>103 Industry Wat</Line1>
+          <City>Staunton</City>
+          <State>VA</State>
+          <ZipCode>24401</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverage</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Staunton, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-28</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Charitable Bingo Association</LastName>
+        <Address>
+          <Line1>210 Giant Dr</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23224</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Bingo</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia credit union PAC</LastName>
+        <Address>
+          <Line1>PO Box 11469</Line1>
+          <City>Lynchburg</City>
+          <State>VA</State>
+          <ZipCode>24506</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Lynchburg, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia CRNA-PAC</LastName>
+        <Address>
+          <Line1>800 East Canal Street</Line1>
+          <Line2>11th Floor</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Nurses</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia CRNA-PAC</LastName>
+        <Address>
+          <Line1>800 East Canal Street</Line1>
+          <Line2>11th Floor</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Nurses</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Equine PAC</LastName>
+        <Address>
+          <Line1>250 West Main Street</Line1>
+          <Line2>Suite 100</Line2>
+          <City>Charlottesville</City>
+          <State>VA</State>
+          <ZipCode>22902</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Horse Farms/Equestrian</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Charlottesville, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Farm Bureau Federation AgPAC</LastName>
+        <Address>
+          <Line1>12580 West Creek Pkwy</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23238</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Enviroment</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia hospital &amp; healthcare pac</LastName>
+        <Address>
+          <Line1>po box 31394</Line1>
+          <City>richmond</City>
+          <State>VA</State>
+          <ZipCode>23294</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>healthcare</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>4945.66</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Independent Auto Dealers PAC</LastName>
+        <Address>
+          <Line1>1525 Huguenot Road</Line1>
+          <Line2>Suite 102</Line2>
+          <City>Midlothian</City>
+          <State>VA</State>
+          <ZipCode>23113</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Auto Dealers</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Midlothian, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Manufactured &amp; Modular Housing Assn PAC</LastName>
+        <Address>
+          <Line1>8413 Patterson Ave</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23229</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Manufactured Housing/Sales</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Henrico, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-20</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>virginia natural gas</LastName>
+        <Address>
+          <Line1>544 s. independence blvd</Line1>
+          <City>virginia beach</City>
+          <State>VA</State>
+          <ZipCode>23452</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>utilities</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>virginia beach</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Optometric Association</LastName>
+        <Address>
+          <Line1>PO BOX 29069</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23242</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Optometric Association</LastName>
+        <Address>
+          <Line1>PO BOX 29069</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23242</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Medical</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-14</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Preservation PAC</LastName>
+        <Address>
+          <Line1>1201 E Cary St</Line1>
+          <Line2>Suite 1002</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Real Estate Developers</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Retail Federation PAC</LastName>
+        <Address>
+          <Line1>5101 Monument Avenue</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23230</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Retail</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Sheriffs Assn</LastName>
+        <Address>
+          <Line1>901 East Byrd St</Line1>
+          <Line2>1301</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Law Enforcement</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-19</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Sheriffs Assn</LastName>
+        <Address>
+          <Line1>901 East Byrd St</Line1>
+          <Line2>1301</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Law Enforcement</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Society of CPAs PAC</LastName>
+        <Address>
+          <Line1>4309 Cox Road</Line1>
+          <City>Glen Allen</City>
+          <State>VA</State>
+          <ZipCode>23060</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>CPAs</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Glen Allen, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Society of the AIA</LastName>
+        <Address>
+          <Line1>2201 W Broad Street</Line1>
+          <Line2>Suite 207</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23220</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Architects</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>1000.00</Amount>
+      <TotalToDate>1000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia State Police Association</LastName>
+        <Address>
+          <Line1>6944 Forest Hill Ave</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23225</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Law Enforercement</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Transportation Construction Alliance</LastName>
+        <Address>
+          <Line1>620 Morefield Park Dr</Line1>
+          <Line2>rSte 120</Line2>
+          <City>North Chesterfield</City>
+          <State>VA</State>
+          <ZipCode>23236</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Construction</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>North Chesterfield, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>3000.00</Amount>
+      <TotalToDate>3000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Visa</LastName>
+        <Address>
+          <Line1>PO Box 2037730</Line1>
+          <City>Austin</City>
+          <State>TX</State>
+          <ZipCode>78720</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Finance</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Austin, TX</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-06</TransactionDate>
+      <Amount>3000.00</Amount>
+      <TotalToDate>3000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>VoteVets Federal, PAC</LastName>
+        <Address>
+          <Line1>PO Box 11293</Line1>
+          <City>Portland</City>
+          <State>OR</State>
+          <ZipCode>97211</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Organization for Vets</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Portland, OR</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-08-01</TransactionDate>
+      <Amount>5000.00</Amount>
+      <TotalToDate>5000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="true">
+        <FirstName>Joseph</FirstName>
+        <LastName>Waldo</LastName>
+        <Address>
+          <Line1>PO Box 11125</Line1>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23517</ZipCode>
+        </Address>
+        <NameOfEmployer>Waldo &amp; Lyle</NameOfEmployer>
+        <OccupationOrTypeOfBusiness>Attorney</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>250.00</Amount>
+      <TotalToDate>250.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Walmart</LastName>
+        <Address>
+          <Line1>702 SW 8th Street</Line1>
+          <City>Bentonville</City>
+          <State>AR</State>
+          <ZipCode>72716</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Retail</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Bentonville, AR</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-28</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Washington Gas</LastName>
+        <Address>
+          <Line1>1000 Maine Avenue SW</Line1>
+          <Line2>Suite 600</Line2>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20024</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Natural Gas</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Washington, DC</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-12-18</TransactionDate>
+      <Amount>500.00</Amount>
+      <TotalToDate>500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Waste Management</LastName>
+        <Address>
+          <Line1>PO Box 3027</Line1>
+          <City>Houston</City>
+          <State>TX</State>
+          <ZipCode>77253</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Waste Disposal/Landfills</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Houston, TX</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-09-15</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>WestRock</LastName>
+        <Address>
+          <Line1>1000 Abernathy Rd</Line1>
+          <Line2>Suite 125</Line2>
+          <City>Atlanta</City>
+          <State>GA</State>
+          <ZipCode>30328</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Paper/Packaging</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Atlanta, GA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>1500.00</Amount>
+      <TotalToDate>1500.00</TotalToDate>
+    </LiA>
+    <LiA>
+      <Contributor IsIndividual="false">
+        <LastName>Williams Mullen Clark &amp; Dobbins</LastName>
+        <Address>
+          <Line1>PO Box 1320</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23218</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>2000.00</Amount>
+      <TotalToDate>2000.00</TotalToDate>
+    </LiA>
+  </ScheduleA>
+  <ScheduleB>
+    <LiB>
+      <Contributor IsIndividual="false">
+        <LastName>Hunton Andrews Kurth</LastName>
+        <Address>
+          <Line1>951 East Byrd St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>PAC</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Richmond VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-27</TransactionDate>
+      <Amount>1646.10</Amount>
+      <TotalToDate>2646.10</TotalToDate>
+      <ValuationBasis>Actual Cost</ValuationBasis>
+      <ProductOrService>Event Cost</ProductOrService>
+    </LiB>
+    <LiB>
+      <Contributor IsIndividual="false">
+        <LastName>Kemper Consulting</LastName>
+        <Address>
+          <Line1>112 Granby St</Line1>
+          <Line2>STE 400</Line2>
+          <City>Norfolk</City>
+          <State>VA</State>
+          <ZipCode>23510</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Lobbying Firm</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Norfolk, VA</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-11-17</TransactionDate>
+      <Amount>948.52</Amount>
+      <TotalToDate>948.52</TotalToDate>
+      <ValuationBasis>Actual Cost</ValuationBasis>
+      <ProductOrService>Event Cost</ProductOrService>
+    </LiB>
+    <LiB>
+      <Contributor IsIndividual="false">
+        <LastName>Virginia Beer Wholesalers Assocation</LastName>
+        <Address>
+          <Line1>17 East Cary St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>Beverage</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>Unknown</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-17</TransactionDate>
+      <Amount>739.16</Amount>
+      <TotalToDate>739.16</TotalToDate>
+      <ValuationBasis>Actual Cost</ValuationBasis>
+      <ProductOrService>Event Cost</ProductOrService>
+    </LiB>
+    <LiB>
+      <Contributor IsIndividual="false">
+        <LastName>virginia hospital &amp; healthcare pac</LastName>
+        <Address>
+          <Line1>po box 31394</Line1>
+          <City>richmond</City>
+          <State>VA</State>
+          <ZipCode>23294</ZipCode>
+        </Address>
+        <OccupationOrTypeOfBusiness>healthcare</OccupationOrTypeOfBusiness>
+        <PrimaryCityAndStateOfEmploymentOrBusiness>richmond</PrimaryCityAndStateOfEmploymentOrBusiness>
+      </Contributor>
+      <TransactionDate>2022-10-19</TransactionDate>
+      <Amount>945.66</Amount>
+      <TotalToDate>3445.66</TotalToDate>
+      <ValuationBasis>Actual Cost</ValuationBasis>
+      <ProductOrService>Event Cost</ProductOrService>
+    </LiB>
+  </ScheduleB>
+  <ScheduleC>
+    <LiC>
+      <Payer IsIndividual="false">
+        <LastName>American Airlines</LastName>
+        <Address>
+          <Line1>P.O. Box 619616</Line1>
+          <City>DFW Airport</City>
+          <State>TX</State>
+          <ZipCode>75261-9616</ZipCode>
+        </Address>
+      </Payer>
+      <TransactionDate>2022-07-15</TransactionDate>
+      <Amount>117.70</Amount>
+      <ReceiptType>Refund</ReceiptType>
+    </LiC>
+  </ScheduleC>
+  <ScheduleD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Allianz Travel Insurance</LastName>
+        <Address>
+          <Line1>9950 Mayland Drive</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23233</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>35.68</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Travel Insurance</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Allianz Travel Insurance</LastName>
+        <Address>
+          <Line1>9950 Mayland Drive</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23233</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>27.56</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Travel Insurance</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>American Airlines</LastName>
+        <Address>
+          <Line1>P.O. Box 619616</Line1>
+          <City>DFW Airport</City>
+          <State>TX</State>
+          <ZipCode>75261-9616</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>161.94</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Airline Ticket</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>American Airlines</LastName>
+        <Address>
+          <Line1>P.O. Box 619616</Line1>
+          <City>DFW Airport</City>
+          <State>TX</State>
+          <ZipCode>75261-9616</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>324.10</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Airline Ticket</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Delta</LastName>
+        <Address>
+          <Line1>1030 Delta Boulevard</Line1>
+          <City>Atlanta</City>
+          <State>GA</State>
+          <ZipCode>30354</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>528.60</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Airline Ticket</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PNC Bank</LastName>
+        <Address>
+          <Line1>PO Box 609</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>15230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-05</TransactionDate>
+      <Amount>1.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Bank Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PNC Bank</LastName>
+        <Address>
+          <Line1>PO Box 609</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>15230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-07</TransactionDate>
+      <Amount>1.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Bank Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PNC Bank</LastName>
+        <Address>
+          <Line1>PO Box 609</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>15230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-07</TransactionDate>
+      <Amount>1.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Bank Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The Chauffy</LastName>
+        <Address>
+          <Line1>Information Requested</Line1>
+          <City>San Francisco</City>
+          <State>CA</State>
+          <ZipCode>94111</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-13</TransactionDate>
+      <Amount>480.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Travel Expense</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-17</TransactionDate>
+      <Amount>39.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Fairfax County Democratic Committee</LastName>
+        <Address>
+          <Line1>8500 Executive Park Ave #402</Line1>
+          <City>Fairfax</City>
+          <State>VA</State>
+          <ZipCode>22031</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>600.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Program Ad</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>House Democratic Caucus</LastName>
+        <Address>
+          <Line1>1021 E. Cary St</Line1>
+          <Line2>1275</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>25000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Publix</LastName>
+        <Address>
+          <Line1>PO Box 407</Line1>
+          <City>Lakeland</City>
+          <State>FL</State>
+          <ZipCode>33802</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>36.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Event Supplies</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Treasurer of Virginia</LastName>
+        <Address>
+          <Line1>The James Monroe Building 101 North 14th Street</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-18</TransactionDate>
+      <Amount>1217.23</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Mailing</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Va AAPI Fund</LastName>
+        <Address>
+          <Line1>PO Box 72923</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-20</TransactionDate>
+      <Amount>500.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-24</TransactionDate>
+      <Amount>5.93</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>New Castle Consultants</LastName>
+        <Address>
+          <Line1>2628 Anwell Dr</Line1>
+          <City>North Chesterfield</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-28</TransactionDate>
+      <Amount>1500.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Consulting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dogwood Campaigns</LastName>
+        <Address>
+          <Line1>2731 Lansdale Road</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23225</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-29</TransactionDate>
+      <Amount>250.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Consulting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-07-31</TransactionDate>
+      <Amount>1.98</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PNC Bank</LastName>
+        <Address>
+          <Line1>PO Box 609</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>15230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-01</TransactionDate>
+      <Amount>15.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Bank Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-02</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-02</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-04</TransactionDate>
+      <Amount>320.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>YM Carreers</LastName>
+        <Address>
+          <Line1>541 Eastern Point Rd Ste 3</Line1>
+          <City>Groton</City>
+          <State>CT</State>
+          <ZipCode>06340</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-05</TransactionDate>
+      <Amount>299.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Job Board Softwarre</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-07</TransactionDate>
+      <Amount>6.41</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Buford Road Pharmacy</LastName>
+        <Address>
+          <Line1>2608 Buford Rd</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-11</TransactionDate>
+      <Amount>12.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Stamps</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-14</TransactionDate>
+      <Amount>11.86</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-16</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-21</TransactionDate>
+      <Amount>82.98</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The Westin Portland Harborview</LastName>
+        <Address>
+          <Line1>157 High St</Line1>
+          <City>Portland</City>
+          <State>ME</State>
+          <ZipCode>04101</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-08-29</TransactionDate>
+      <Amount>5.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Travel Expense</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Portsmouth Democratic Committee</LastName>
+        <Address>
+          <Line1>1725 Green St</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-01</TransactionDate>
+      <Amount>1000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-02</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Hampton Democratic Committee</LastName>
+        <Address>
+          <Line1>PO Box 342</Line1>
+          <City>Hampton</City>
+          <State>VA</State>
+          <ZipCode>23669</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-02</TransactionDate>
+      <Amount>250.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-02</TransactionDate>
+      <Amount>320.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-04</TransactionDate>
+      <Amount>19.78</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Resonance Campaigns</LastName>
+        <Address>
+          <Line1>913 Florida Ave NW</Line1>
+          <City>Washington</City>
+          <State>DC</State>
+          <ZipCode>20001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-06</TransactionDate>
+      <Amount>13402.02</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Campaign Materials</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-07</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>House Democratic Caucus</LastName>
+        <Address>
+          <Line1>1021 E. Cary St</Line1>
+          <Line2>1275</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-07</TransactionDate>
+      <Amount>50000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-11</TransactionDate>
+      <Amount>25.96</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Extra Space Storage</LastName>
+        <Address>
+          <Line1>200 Popular Hill Rd</Line1>
+          <City>Chesapeake</City>
+          <State>VA</State>
+          <ZipCode>23321</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-12</TransactionDate>
+      <Amount>3081.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Storage Unit</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-15</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>MLK Leadership Steering Committee</LastName>
+        <Address>
+          <Line1>1214 County Street</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-15</TransactionDate>
+      <Amount>1000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>MLK Campaign</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-18</TransactionDate>
+      <Amount>120.48</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The Lily Pad</LastName>
+        <Address>
+          <Line1>9680 Osborne Turnpike</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23231</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-23</TransactionDate>
+      <Amount>512.36</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Event Costs</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-25</TransactionDate>
+      <Amount>39.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>FTD</LastName>
+        <Address>
+          <Line1>3113 Woodcreek Drive</Line1>
+          <City>Downers Grove</City>
+          <State>IL</State>
+          <ZipCode>60515</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-26</TransactionDate>
+      <Amount>88.42</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Flowers</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Gibson Print</LastName>
+        <Address>
+          <Line1>5659 S Laburnum Ave</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23231</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-27</TransactionDate>
+      <Amount>180.20</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Printing</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-09-30</TransactionDate>
+      <Amount>12.07</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-03</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-03</TransactionDate>
+      <Amount>1310.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Metro Richmond Area Young Dems</LastName>
+        <Address>
+          <Line1>919 E Main Street</Line1>
+          <Line2>Suite 2050</Line2>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23219</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-05</TransactionDate>
+      <Amount>500.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-09</TransactionDate>
+      <Amount>2.97</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-11</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>MLK Leadership Steering Committee</LastName>
+        <Address>
+          <Line1>1214 County Street</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-14</TransactionDate>
+      <Amount>500.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>MLK Campaign</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>MLK Leadership Steering Committee</LastName>
+        <Address>
+          <Line1>1214 County Street</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-14</TransactionDate>
+      <Amount>500.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>MLK Campaign</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-16</TransactionDate>
+      <Amount>9.90</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-17</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>YM Carreers</LastName>
+        <Address>
+          <Line1>541 Eastern Point Rd Ste 3</Line1>
+          <City>Groton</City>
+          <State>CT</State>
+          <ZipCode>06340</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-24</TransactionDate>
+      <Amount>99.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Job Board Softtware</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Fish &amp; Slips Marina Raw Bar &amp; Grill</LastName>
+        <Address>
+          <Line1>10 Crawford Pkwy</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-27</TransactionDate>
+      <Amount>320.25</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Team Dinner</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The UPS Store</LastName>
+        <Address>
+          <Line1>2711 Buford Rd</Line1>
+          <City>Bon Air</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-27</TransactionDate>
+      <Amount>4.20</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Postage</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>YM Carreers</LastName>
+        <Address>
+          <Line1>541 Eastern Point Rd Ste 3</Line1>
+          <City>Groton</City>
+          <State>CT</State>
+          <ZipCode>06340</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-27</TransactionDate>
+      <Amount>99.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Job Board Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-10-30</TransactionDate>
+      <Amount>59.25</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>3rd annual somewhere over the rainbow gala</LastName>
+        <Address>
+          <Line1>5655 Greenwich Rd</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23462</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-01</TransactionDate>
+      <Amount>508.32</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Pressable</LastName>
+        <Address>
+          <Line1>110 E Houston St</Line1>
+          <City>San Antonio</City>
+          <State>TX</State>
+          <ZipCode>78205</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-01</TransactionDate>
+      <Amount>25.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The UPS Store</LastName>
+        <Address>
+          <Line1>2711 Buford Rd</Line1>
+          <City>Bon Air</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-01</TransactionDate>
+      <Amount>276.41</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Postage</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>USPS</LastName>
+        <Address>
+          <Line1>431 Crawford St</Line1>
+          <Line2>1st Floor</Line2>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23704</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-01</TransactionDate>
+      <Amount>84.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Postage</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-02</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>GoDaddy</LastName>
+        <Address>
+          <Line1>14455 N Hayden Rd</Line1>
+          <City>Scottsdale</City>
+          <State>AZ</State>
+          <ZipCode>85260</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-02</TransactionDate>
+      <Amount>45.32</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Domain Registration</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>GoDaddy</LastName>
+        <Address>
+          <Line1>14455 N Hayden Rd</Line1>
+          <City>Scottsdale</City>
+          <State>AZ</State>
+          <ZipCode>85260</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-02</TransactionDate>
+      <Amount>2.97</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Domain Registration</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-02</TransactionDate>
+      <Amount>1310.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Softwarer</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The UPS Store</LastName>
+        <Address>
+          <Line1>2711 Buford Rd</Line1>
+          <City>Bon Air</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-02</TransactionDate>
+      <Amount>1.25</Amount>
+      <AuthorizingName>Don Scottt</AuthorizingName>
+      <ItemOrService>Postage</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>GoDaddy</LastName>
+        <Address>
+          <Line1>14455 N Hayden Rd</Line1>
+          <City>Scottsdale</City>
+          <State>AZ</State>
+          <ZipCode>85260</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-03</TransactionDate>
+      <Amount>94.01</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Domain Registration</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Doodle</LastName>
+        <Address>
+          <Line1>100 Wall St Fl 10</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10005</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-04</TransactionDate>
+      <Amount>83.40</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PNC Bank</LastName>
+        <Address>
+          <Line1>PO Box 609</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>15230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-04</TransactionDate>
+      <Amount>2.50</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Bank Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-06</TransactionDate>
+      <Amount>9.88</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-08</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Sympathy Floral Store</LastName>
+        <Address>
+          <Line1>1755 OCEAN ST</Line1>
+          <City>MARSHFIELD</City>
+          <State>MA</State>
+          <ZipCode>02050</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-09</TransactionDate>
+      <Amount>267.10</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Flowers</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-10</TransactionDate>
+      <Amount>11.95</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-13</TransactionDate>
+      <Amount>0.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-16</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Holly Seibold for Delegate</LastName>
+        <Address>
+          <Line1>1101 Redwood Drive SE</Line1>
+          <City>Vienna</City>
+          <State>VA</State>
+          <ZipCode>22180</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-21</TransactionDate>
+      <Amount>3000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The Hof Garden</LastName>
+        <Address>
+          <Line1>2818 W Broad St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-22</TransactionDate>
+      <Amount>245.92</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Event Deposit Installment</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Pressable</LastName>
+        <Address>
+          <Line1>110 E Houston St</Line1>
+          <City>San Antonio</City>
+          <State>TX</State>
+          <ZipCode>78205</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-23</TransactionDate>
+      <Amount>19.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>University of Virginia</LastName>
+        <Address>
+          <Line1>400 Emmet St S</Line1>
+          <City>Charlottesville</City>
+          <State>VA</State>
+          <ZipCode>22903</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-11-28</TransactionDate>
+      <Amount>280.19</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Merch</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Pressable</LastName>
+        <Address>
+          <Line1>110 E Houston St</Line1>
+          <City>San Antonio</City>
+          <State>TX</State>
+          <ZipCode>78205</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-01</TransactionDate>
+      <Amount>25.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Bitly</LastName>
+        <Address>
+          <Line1>601 W 26th St 3rd Floor, STE 357</Line1>
+          <City>New York</City>
+          <State>NY</State>
+          <ZipCode>10001</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-02</TransactionDate>
+      <Amount>35.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-02</TransactionDate>
+      <Amount>1310.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Elementor</LastName>
+        <Address>
+          <Line1>2600 Flatbush Ave</Line1>
+          <City>Brooklyn</City>
+          <State>NY</State>
+          <ZipCode>11234</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-05</TransactionDate>
+      <Amount>59.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>NGP VAN Inc</LastName>
+        <Address>
+          <Line1>PO Box 392264</Line1>
+          <City>Pittsburgh</City>
+          <State>PA</State>
+          <ZipCode>25251-9264</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-06</TransactionDate>
+      <Amount>100.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Gibson Print</LastName>
+        <Address>
+          <Line1>5659 S Laburnum Ave</Line1>
+          <City>Henrico</City>
+          <State>VA</State>
+          <ZipCode>23231</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-07</TransactionDate>
+      <Amount>585.65</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Printing</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Blue Virginia</LastName>
+        <Address>
+          <Line1>1338 N Lynnbrook Dr</Line1>
+          <City>Arlington</City>
+          <State>VA</State>
+          <ZipCode>22201</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-08</TransactionDate>
+      <Amount>325.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Ads</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Hughes Florist</LastName>
+        <Address>
+          <Line1>4242 Portsmouth Blvd</Line1>
+          <City>Portsmouth</City>
+          <State>VA</State>
+          <ZipCode>23701</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-12</TransactionDate>
+      <Amount>160.35</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Flowers</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PhoneBurner, Inc</LastName>
+        <Address>
+          <Line1>1968 S. Coast Hwy, Suite 1800</Line1>
+          <City>Laguna Beach</City>
+          <State>CA</State>
+          <ZipCode>92651</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-12</TransactionDate>
+      <Amount>149.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Software</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Future Generations PAC</LastName>
+        <Address>
+          <Line1>PO Box 3604</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-13</TransactionDate>
+      <Amount>250000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>New Castle Consultants</LastName>
+        <Address>
+          <Line1>2628 Anwell Dr</Line1>
+          <City>North Chesterfield</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-13</TransactionDate>
+      <Amount>1900.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Consulting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>PLSR</LastName>
+        <Address>
+          <Line1>3387 Gregory St</Line1>
+          <City>San Diego</City>
+          <State>CA</State>
+          <ZipCode>92104</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-13</TransactionDate>
+      <Amount>8000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Research</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>The Hof Garden</LastName>
+        <Address>
+          <Line1>2818 W Broad St</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23230</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-15</TransactionDate>
+      <Amount>245.92</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Event Deposit Installment</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Dreamhost</LastName>
+        <Address>
+          <Line1>417 associated rd</Line1>
+          <City>brea</City>
+          <State>CA</State>
+          <ZipCode>92821</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-16</TransactionDate>
+      <Amount>13.99</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Website Hosting</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Michael Simon Photography</LastName>
+        <Address>
+          <Line1>3005 Brook Rd</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23227</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-19</TransactionDate>
+      <Amount>617.40</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Photography</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>University Florist</LastName>
+        <Address>
+          <Line1>165 S Main St</Line1>
+          <City>Lexington</City>
+          <State>VA</State>
+          <ZipCode>24450</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-20</TransactionDate>
+      <Amount>130.63</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Flowers</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Buford Road Pharmacy</LastName>
+        <Address>
+          <Line1>2608 Buford Rd</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-22</TransactionDate>
+      <Amount>24.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Stamps</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Rouse for Senate</LastName>
+        <Address>
+          <Line1>PO Box 2864</Line1>
+          <City>Virginia Beach</City>
+          <State>VA</State>
+          <ZipCode>23450</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-22</TransactionDate>
+      <Amount>5000.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Contribution</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Pressable</LastName>
+        <Address>
+          <Line1>110 E Houston St</Line1>
+          <City>San Antonio</City>
+          <State>TX</State>
+          <ZipCode>78205</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-23</TransactionDate>
+      <Amount>19.00</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Web Services</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-25</TransactionDate>
+      <Amount>19.75</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Festival Flags</LastName>
+        <Address>
+          <Line1>2728 Tinsley Dr</Line1>
+          <City>Richmond</City>
+          <State>VA</State>
+          <ZipCode>23235</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-29</TransactionDate>
+      <Amount>214.12</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Event Supplies</ItemOrService>
+    </LiD>
+    <LiD>
+      <Payee IsIndividual="false">
+        <LastName>Act Blue</LastName>
+        <Address>
+          <Line1>366 Summer Street</Line1>
+          <City>Sommersville</City>
+          <State>MA</State>
+          <ZipCode>02144</ZipCode>
+        </Address>
+      </Payee>
+      <TransactionDate>2022-12-31</TransactionDate>
+      <Amount>69.13</Amount>
+      <AuthorizingName>Don Scott</AuthorizingName>
+      <ItemOrService>Service Fee</ItemOrService>
+    </LiD>
+  </ScheduleD>
+  <ScheduleE/>
+  <ScheduleF/>
+  <ScheduleG>
+    <ScheduleACount>175</ScheduleACount>
+    <ScheduleATotal>382125.00</ScheduleATotal>
+    <ScheduleBCount>4</ScheduleBCount>
+    <ScheduleBTotal>4279.44</ScheduleBTotal>
+    <UnItemizedCount>63</UnItemizedCount>
+    <UnItemizedTotal>2222.00</UnItemizedTotal>
+    <UnItemizedInKindCount>0</UnItemizedInKindCount>
+    <UnItemizedInKindTotal>0.00</UnItemizedInKindTotal>
+    <AllContributionsCount>242</AllContributionsCount>
+    <AllContributionsTotal>388626.44</AllContributionsTotal>
+    <ScheduleCTotal>117.70</ScheduleCTotal>
+    <ScheduleBTotalRepeated>4279.44</ScheduleBTotalRepeated>
+    <UnItemizedInKindTotalRepeated>0.00</UnItemizedInKindTotalRepeated>
+    <ScheduleDTotal>382062.73</ScheduleDTotal>
+    <TotalInKindAndExpenditures>386342.17</TotalInKindAndExpenditures>
+    <BeginningLoanBalance>0.00</BeginningLoanBalance>
+    <LoansReceivedTotal>0.00</LoansReceivedTotal>
+    <LoansReceivedAndExistingTotal>0.00</LoansReceivedAndExistingTotal>
+    <LoansPaidTotal>0.00</LoansPaidTotal>
+    <NewLoanBalance>0.00</NewLoanBalance>
+  </ScheduleG>
+  <ScheduleH>
+    <BeginningBalance>311783.58</BeginningBalance>
+    <ContributionsReceived>388626.44</ContributionsReceived>
+    <ScheduleCTotal>117.70</ScheduleCTotal>
+    <LoansReceivedTotal>0.00</LoansReceivedTotal>
+    <ContributionsAndReceiptsReceived>388744.14</ContributionsAndReceiptsReceived>
+    <TotalExpendableFunds>700527.72</TotalExpendableFunds>
+    <TotalInKindAndExpenditures>386342.17</TotalInKindAndExpenditures>
+    <LoansPaidTotal>0.00</LoansPaidTotal>
+    <ScheduleITotal>0.00</ScheduleITotal>
+    <TotalPaymentsMade>386342.17</TotalPaymentsMade>
+    <ExpendableFundsBalance>314185.55</ExpendableFundsBalance>
+    <TotalUnPaidDebts>0.00</TotalUnPaidDebts>
+    <BalanceAtStartOfElectionCycle>116493.81</BalanceAtStartOfElectionCycle>
+    <PreviousReceipts>229199.00</PreviousReceipts>
+    <CurrentReceipts>388744.14</CurrentReceipts>
+    <TotalReceiptsThisElectionCycle>617943.14</TotalReceiptsThisElectionCycle>
+    <TotalFundsAvailable>734436.95</TotalFundsAvailable>
+    <PreviousDisbursements>33909.23</PreviousDisbursements>
+    <CurrentDisbursements>386342.17</CurrentDisbursements>
+    <TotalDisbursements>420251.40</TotalDisbursements>
+    <EndingBalance>314185.55</EndingBalance>
+  </ScheduleH>
+</Report>
