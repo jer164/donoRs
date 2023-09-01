@@ -41,3 +41,7 @@ vignettes/*.pdf
 .Rproj.user
 *.csv
 *.tsv
+
+# states folder
+
+states/
