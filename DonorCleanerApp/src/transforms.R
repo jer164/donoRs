@@ -2,7 +2,7 @@
 #####################################################
 #####################################################
 # Author: Jackson Rudoff                            #
-# Last Dev Period: Spring 2023                      #
+# Last Dev Period: Summer 2023                      #
 #                                                   #
 # About:                                            #
 # These transformations are intended to auto-format #
@@ -22,7 +22,6 @@ virtualenv_create(envname = "python_environment", python = "python3")
 virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "requests"))
 reticulate::use_virtualenv("python_environment", required = TRUE)
 reticulate::source_python("src/virginia.py", convert = TRUE)
-#reticulate::source_python("src/missouri.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
 
 
@@ -51,7 +50,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
   ### These states have a non-tabular first row
 
-  else if (state_fin == "GA" | state_fin == "NM" | state_fin == "WV") {
+  else if (state_fin == "GA" | state_fin == "NM" | state_fin == "WV" | state_fin == "AR") {
     temp_data <- read_csv(input_data_path, skip = 1) %>% as_tibble()
   }
 
@@ -59,6 +58,13 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
   else if (state_fin == "AZ") {
     temp_data <- read.csv(input_data_path, fileEncoding = "UTF-16LE") %>% as_tibble()
+  }
+  
+  ### DC also has a formatting issue and needs a skip
+  
+  else if (state_fin == "DC") {
+    temp_data <- read_csv(input_data_path, 
+                          skip = 1, locale = readr::locale(encoding = "UTF-16LE")) %>% as_tibble()
   }
 
   ### These states use .TXT files
@@ -77,6 +83,11 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- temp_data[[1]] %>% as_tibble()
     colnames(temp_data) <- temp_data[1,]
     temp_data <- slice(temp_data, -1)
+  }
+  
+  else if (state_fin == "TX"){
+    
+    temp_data <- read_csv(input_data_path, skip = 4) 
   }
 
   ### These states use standard .CSVs
@@ -111,6 +122,19 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- temp_data %>%
       separate("CityState", c("city", "state"), sep = ",") %>%
       mutate(full_address = "NULL")
+  } else if (state_fin == "AR") {
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "full_name" = "contributor_payee",
+      "donation_amount" = "amount",
+      "donation_date" = "date",
+      "full_address" = "address"
+    )
+    
+    temp_data <- temp_data %>% 
+      mutate(donation_amount = gsub("\\$", "", donation_amount))
+    
   } else if (state_fin == "ATL") {
     temp_data <- temp_data %>% clean_names()
 
@@ -176,7 +200,10 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
     temp_data <- temp_data %>%
       separate("CityState", c("city", "state"), sep = ",") %>%
-      mutate(full_address = "NULL")
+      mutate(full_address = "NULL") %>% 
+      mutate_if(is.character, trimws) %>% 
+      filter(is.na(city) == F) %>% 
+      filter(state != "" | state != " " | is.na(state) == F)
   } else if (state_fin == "CT") {
     temp_data <- temp_data %>% clean_names()
 
@@ -186,6 +213,20 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "donation_date" = "transaction_date"
     )
 
+  } else if (state_fin == "DC") {
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "first_name" = "contributor_first_name",
+      "last_name" = "contributor_last_name",
+      "addr1" = "number_and_street",
+      "donation_amount" = "amount",
+      "donation_date" = "receipt_date"
+    )
+    
+    temp_data <- temp_data %>% 
+      mutate(donation_amount = str_remove(donation_amount, "\\$"))
+    
   } else if (state_fin == "DE") {
     temp_data <- temp_data %>% clean_names()
 
@@ -199,12 +240,21 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "city" = "contributor_city",
       "zip" = "contributor_zip"
     )
+  
+  } else if (state_fin == "DET") {
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "full_name" = "contributor_name",
+      "full_address" = "contributor_address",
+      "donation_amount" = "contribution_amount",
+      "donation_date" = "transaction_date"
+    )
 
    
   } else if (state_fin == "FEC") {
     temp_data <- temp_data %>% rename(
       "first_name" = "contributor_first_name",
-      "middle_name" = "contributor_middle_name",
       "last_name" = "contributor_last_name",
       "addr1" = "contributor_street_1",
       "addr2" = "contributor_street_2",
@@ -212,12 +262,13 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "donation_date" = "contribution_receipt_date",
       "state" = "contributor_state",
       "city" = "contributor_city",
-      "zip" = "contributor_zip",
+      "zip" = "contributor_zip"
     )
 
 
     temp_data <- temp_data %>%
-      mutate(donation_date = gsub("-", "/", donation_date))
+      mutate(donation_date = gsub("-", "/", donation_date)) %>% 
+      mutate(zip  = substr(zip, start = 1, stop = 5))
   } else if (state_fin == "FL") {
     
     temp_data <- temp_data %>% clean_names()
@@ -237,7 +288,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(state = word(city_state_zip, 2, sep = ",")) %>% 
       mutate(zip = str_extract(state, "\\d{5}")) %>%
       mutate(state = str_extract(state, "[A-Z]{2}")) %>% 
-      #mutate(addr1 = "") %>% 
+      mutate(addr1 = "") %>% 
       mutate(first_name = word(full_name, 2, sep = " ")) %>% 
       mutate(last_name = word(full_name, 1, sep = " ")) %>% 
       mutate(full_name = "") %>% 
@@ -263,10 +314,13 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(city = ifelse(str_detect(city, "\\d+") == TRUE, "NULL", city))
   } else if (state_fin == "GA_old") {
     temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% mutate(last_name = str_remove(last_name, "Mr.|Ms.|Mrs.|Dr.")) %>% 
+      mutate(last_name = str_remove(last_name, "[.,]")) %>% 
+      mutate(last_name = str_trim(last_name)) %>% 
+      mutate(state = str_trim(state))
 
     temp_data <- temp_data %>% rename(
-      "first_name" = "first_name",
-      "last_name" = "last_name",
       "donation_amount" = "cash_amount",
       "donation_date" = "date",
       "addr1" = "address"
@@ -343,8 +397,9 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "city" = "City",
       "zip" = "Zip"
     )
-
-    temp_data <- temp_data %>% mutate(donation_date = mdy_hms(donation_date, tz = Sys.timezone()))
+    
+    temp_data <- temp_data %>% 
+      mutate(donation_date = gsub(" 00:00:00", "", donation_date))
   } else if (state_fin == "LA") {
     temp_data <- temp_data %>% rename(
       "full_name" = "ContributorName",
@@ -416,23 +471,6 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(full_address = "")
     
     
-  } else if (state_fin == "MO") {
-    temp_data <- temp_data %>% clean_names()
-
-    temp_data <- temp_data %>% rename(
-      "first_name" = "contributor_first_name",
-      "last_name" = "contributor_last_name",
-      "addr1" = "address1",
-      "donation_amount" = "contribution_amount",
-      "donation_date" = "contribution_date"
-    )
-
-    temp_data <- temp_data %>%
-      mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
-      mutate_if(is.list, as.character) %>% 
-      mutate(across(where(is.character), ~ gsub("NaN", "", .)))
-      
-    
   } else if (state_fin == "MI") {
     temp_data <- temp_data %>% clean_names()
 
@@ -500,7 +538,27 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(state = str_extract(word(full_address, -1, sep = ","), "[A-Z]+")) %>%
       mutate(city = word(full_address, -2, sep = ",")) %>%
       mutate(full_address = word(full_address, 1, sep = ","))
-  } else if (state_fin == "NC") {
+    
+    
+    
+    }else if (state_fin == "MO") {
+      temp_data <- temp_data %>% clean_names()
+      
+      temp_data <- temp_data %>% rename(
+        "first_name" = "contributor_first_name",
+        "last_name" = "contributor_last_name",
+        "addr1" = "address1",
+        "donation_amount" = "contribution_amount",
+        "donation_date" = "contribution_date"
+      )
+      
+      temp_data <- temp_data %>%
+        mutate(donation_amount = gsub("\\$", "", donation_amount)) %>% 
+        mutate_if(is.list, as.character) %>% 
+        mutate(across(where(is.character), ~ gsub("NaN", "", .)))
+      
+      
+    }else if (state_fin == "NC") {
     temp_data <- temp_data %>% clean_names()
 
     temp_data <- temp_data %>% rename(
@@ -515,7 +573,11 @@ donor_cleaner <- function(input_data_path, state_fin) {
 
 
     temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
-    temp_data <- temp_data %>% mutate(zip = str_extract(zip, "\\d{5}"))
+    temp_data <- temp_data %>% 
+      mutate(zip = str_extract(zip, "\\d{5}")) %>% 
+      filter(full_name != "Aggregated Individual Contribution") %>% 
+      filter(full_name != "Aggregated Non-Media Expenditure") %>%
+      mutate_at(c("full_name", "addr1", "city"), str_to_title)
   } else if (state_fin == "ND") {
     temp_data <- temp_data %>% rename(
       "full_name" = "Contributor",
@@ -709,6 +771,22 @@ donor_cleaner <- function(input_data_path, state_fin) {
       mutate(state = word(full_address, -2, sep = ",")) %>%
       mutate(city = word(full_address, -3, sep = ",")) %>%
       mutate(full_address = word(full_address, 1, -4))
+    
+    
+  } else if (state_fin == "TX") {
+    
+    temp_data <- temp_data %>% clean_names()
+    
+    temp_data <- temp_data %>% rename(
+      "donation_amount" = "amount",
+      "donation_date" = "date"
+    )
+    
+    temp_data <- temp_data %>% 
+      mutate(first_name = trimws(word(contributor_name, 2, sep = ","))) %>% 
+      mutate(last_name = trimws(word(contributor_name, 1, sep = ","))) %>% 
+      mutate(zip = word(zip, sep = "-"))
+    
   } else if (state_fin == "UT") {
     temp_data <- temp_data %>% rename(
       "full_name" = "NAME",
@@ -747,21 +825,14 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "full_name" = "contributor_name",
       "full_address" = "contributor_address",
       "donation_amount" = "amount",
-      "donation_date" = "transaction_date",
-      "state" = "town_state",
-      "city" = "town_city"
+      "donation_date" = "transaction_date"
     )
 
-
-
-    temp_data <- temp_data %>%
-      mutate(state = gsub(",", "", state)) %>%
-      mutate(zip = str_extract(full_address, "\\d{5}")) %>%
-      mutate(state = word(full_address, -1, sep = ",")) %>%
-      mutate(state = str_extract(state, "[A-Z]+")) %>%
-      mutate(city = word(full_address, -2, sep = ",")) %>%
-      mutate(full_address = word(full_address, 1, -4, sep = ","))
   } else if (state_fin == "WA") {
+    
+    temp_data <- temp_data %>%
+      filter(contributor_category == 'Individual')
+    
     temp_data <- temp_data %>% rename(
       "full_name" = "contributor_name",
       "addr1" = "contributor_address",
@@ -772,9 +843,10 @@ donor_cleaner <- function(input_data_path, state_fin) {
       "zip" = "contributor_zip"
     )
 
-
     temp_data <- temp_data %>%
-      mutate(donation_date = as.character(gsub("UTC", "", donation_date)))
+     # mutate(donation_date = as.character(gsub("UTC", "", donation_date)))
+      mutate(full_name = sub(" ", ", ", full_name, fixed = TRUE)) %>% 
+      mutate(donation_date = substr(donation_date, 1, 10))
   } else if (state_fin == "WI") {
     temp_data <- temp_data %>% rename(
       "full_name" = "ContributorName",
@@ -799,11 +871,9 @@ donor_cleaner <- function(input_data_path, state_fin) {
     )
 
     temp_data$donation_amount <- as.numeric(gsub("\\$|,", "", temp_data$donation_amount))
-    temp_data <- temp_data %>%
-      mutate(zip = str_extract(full_address, "\\d{5}")) %>%
-      mutate(state = word(full_address, -2, sep = ",")) %>%
-      mutate(city = word(full_address, -3, sep = ",")) %>%
-      mutate(full_address = word(full_address, 1, -4, sep = ","))
+    temp_data <- temp_data %>% 
+      filter(is.na(full_address) == F | full_address %in% c("", " "))
+    
   } else if (state_fin == "WY") {
     temp_data <- temp_data %>% clean_names()
 
@@ -848,8 +918,7 @@ donor_cleaner <- function(input_data_path, state_fin) {
     mutate(donation_amount = gsub("\\.\\d{2}", "", donation_amount)) %>% # remove decimals
     mutate(donation_amount = as.integer(gsub(",", "", donation_amount))) %>% #integers only
     filter(!is.na(donation_amount) & donation_amount > 0) %>% # remove NA or 0 
-    mutate(across(c(first_name, last_name, full_name), ~replace_na(.,""))) # for ABBA rows counts
-    
+    mutate(across(c(first_name, last_name, full_name), ~replace_na(.,""))) %>% # for ABBA rows counts
 
   return(temp_data)
 }

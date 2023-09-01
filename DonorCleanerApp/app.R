@@ -1,5 +1,8 @@
+# Load libraries
 
 library(shiny)
+library(shinythemes)
+library(readxl)
 library(rvest)
 library(tidyverse)
 library(lubridate)
@@ -9,21 +12,82 @@ library(glue)
 library(DT)
 library(reticulate)
 library(XML)
+library(shinycssloaders)
 
 ### options
 
-options(shiny.maxRequestSize = 30 * 1024^2)
+options(shiny.maxRequestSize = 100 * 1024^2)
+
+### State Donor Pages
+
+links_data <- read_csv("src/donor_links.csv")
 
 # Define UI for data upload app ----
-ui <- fluidPage(
-  tags$style(
-    type = "text/css",
-    ".shiny-output-error { visibility: hidden; }",
-    ".shiny-output-error:before { visibility: hidden; }"
+ui <- navbarPage(
+  tags$head(
+    tags$link(
+      rel = "stylesheet",
+      type = "text/css",
+      href = "https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:700|Open+Sans:b&effect=3d-float"
+    ),
+    tags$link(rel = "shortcut icon", href = "https://img.icons8.com/office/40/us-dollar-circled--v1.png", alt="us-dollar-circled--v1", type = "image/x-icon"),
+    tags$style(
+      ".shiny-output-error { visibility: hidden; }",
+      ".shiny-output-error:before { visibility: hidden; }",
+      HTML("
+        /* Change background color */
+        body {
+          background-color: #F5F8FA;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+        }
+        .title {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #0A4571;
+        }
+        .well {
+          background-color: #D1E6F6;
+        }
+        .btn-default[download] {
+          background-color: #F5D8F4;
+          border-color: #0F1823;
+        }
+        table.dataTable tbody tr:hover {
+          background-color: #3C6C89;
+          color: white;
+        }
+        table.dataTable {
+          header-color: #FF9925;
+          background-color: #ffffff;
+        }
+        /* Change table size */
+        .dataTables_wrapper {
+          width: 100%;
+          height: 100%;
+          overflow-x: auto;
+          overflow-y: scroll;
+        }
+        /* Change button color */
+        .btn-primary {
+          background-color: #197EF0;
+          border-color: #0F1823;
+        }
+        /* Change selectInput color */
+        select {
+          background-color: #E5EEF3;
+        }
+      ")
+    ),
   ),
 
   # App title ----
-  titlePanel("Donor Formatter"),
+  title = 'Donors App',
+  tabPanel("Donor Formatter",
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -34,14 +98,15 @@ ui <- fluidPage(
 
 
       # Input: Select a file ----
-      fileInput("donorfile", "Select a .csv, .txt, .xml, or .html Donor File",
+      fileInput("donorfile", "Select a .csv, .txt, .xml, or .html list of contributions",
         multiple = TRUE,
         accept = c(
           "text/csv",
           "text/comma-separated-values,text/plain",
           ".csv",
           ".xml",
-          ".html"
+          ".html",
+          ".xlsx"
         )
       ),
       htmlOutput("donorsize"),
@@ -58,21 +123,24 @@ ui <- fluidPage(
           `National` = list("FEC" = "FEC"),
           `City` = list(
             "Atlanta" = "ATL",
+            "Detroit" = "DET",
             "Los Angeles" = "LA_C",
             "New York City" = "NYC",
-            "Philadelphia" = "PHIL"
+            "Philadelphia" = "PHIL",
+            "Washington, D.C." = "DC"
           ),
           `State` = list(
             "Alabama" = "AL",
             "Alaska" = "AK",
             "Arizona" = "AZ",
+            "Arkansas" = "AR",
             "California" = "CA",
             "Colorado" = "CO",
             "Connecticut" = "CT",
             "Delaware" = "DE",
             "Florida" = "FL",
-            "Georgia (Transactions)" = "GA",
-            "Georgia (Finance Report)" = "GA_old",
+            "Georgia (New Transaction Search)" = "GA",
+            "Georgia (Old Finance Website)" = "GA_old",
             "Hawaii" = "HI",
             "Idaho" = "ID",
             "Illinois" = "IL",
@@ -99,6 +167,7 @@ ui <- fluidPage(
             "Rhode Island" = "RI",
             "South Carolina" = "SC",
             "Tennessee" = "TN",
+            "Texas" = "TX",
             "Utah" = "UT",
             "Virginia" = "VA",
             "Vermont" = "VT",
@@ -110,6 +179,8 @@ ui <- fluidPage(
         ),
         selected = "Alabama",
       ),
+      checkboxInput("filter_state", "Filter State", FALSE, width = 600
+      ),
       conditionalPanel(
         condition = "input.state == 'PHIL'",
         textInput("philly_can", "Philadelphia Candidate")
@@ -117,25 +188,72 @@ ui <- fluidPage(
 
       # Button
       downloadButton("downloadData", "Download"),
-      tags$a(href = "https://jer164.github.io/donoRs/", "User Guide", target = "_blank")
+      tags$hr(),
+      tags$a(href = "https://jer164.github.io/donoRs/", "Need Assistance? Check the User Guide", target = "_blank")
     ),
 
     # Main panel for displaying outputs ----
-    mainPanel(
+    mainPanel(withSpinner(type = getOption("spinner.type", default = 4),
+                          image = "https://media.tenor.com/k-PfH9O4EpcAAAAj/money-cash.gif",
+                          image.width = 100,
+                          image.height = 100,
 
       # Output: Data file ----
       dataTableOutput("contents")
     )
+  ))
+),
+
+tabPanel("State Website Links",
+         dataTableOutput("statelinks")
+    ),
+
+tabPanel("File Checker",
+      
+  sidebarLayout(
+           
+           # Sidebar panel for inputs ----
+    sidebarPanel(
+      
+         fileInput("formatted_donorfile", "Select a formatted donor .csv.",
+                   multiple = TRUE,
+                   accept = c(
+                     "text/csv",
+                     "text/comma-separated-values,text/plain",
+                     ".csv")
+         ),
+         htmlOutput("test_1"),
+         htmlOutput("test_2"),
+         htmlOutput("test_3"),
+         tags$hr(),
+         selectInput("plot_type", "Select Plot Type:",
+                     choices = c("Donation Amounts", "State Distribution"),
+                     selected = "Donation Amounts")
+         
+    ),
+    mainPanel(
+      plotOutput("donorplot")
+    ),
+  )
   )
 )
 
-
 server <- function(input, output) {
+  
+  output$statelinks <- renderDataTable({
+    # Format the "State" column as hyperlinks using their corresponding "link" value
+    formattedlinks <- links_data %>%
+      mutate(State = paste0("<a href='", Link, "' target='_blank'>", State, "</a>")) %>%
+      select(State, Comments)
+    datatable(formattedlinks, escape = FALSE, options = list(dom = 't', pageLength = '50'), rownames = FALSE)
+  })
+  
+  # load the necessary code
   source("src/transforms.R")
   
   output_file_name <- reactive({
     file_name <- input$donorfile$name
-    substr(file_name, 1, nchar(file_name) - 4)
+    word(file_name, 1, sep = "\\.")
   })
 
   candidate <- reactive({
@@ -145,6 +263,21 @@ server <- function(input, output) {
   state_fin <- reactive({
     input$state
   })
+  
+  ##### Create reactive dataset for download
+  
+  datasetInput <- reactive({
+    if (input$state == "PHIL") {
+      donors_df <- donor_cleaner(input$philly_can, state_fin())
+    } else {
+      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())
+    }
+    if(input$filter_state){
+      donors_df %>% filter(state == state_fin())
+    } else {
+      donors_df
+    }
+  })
 
   #### Create DataTable on Output
 
@@ -152,18 +285,12 @@ server <- function(input, output) {
     df <- datasetInput() %>%
       select_if(function(x) !(all(is.na(x)) | all(x == ""))) %>% 
       select_if(~!all(. == "NULL"))
+    
+    datatable(df, options = list(
+      pageLength = 5
+    ))
   })
 
-  ##### Create reactive dataset for download
-
-
-  datasetInput <- reactive({
-    if (input$state == "PHIL") {
-      donors_df <- donor_cleaner(input$philly_can, state_fin())
-    } else {
-      donors_df <- donor_cleaner(input$donorfile$datapath, state_fin())
-    }
-  })
 
   ###### Create download
   output$downloadData <- downloadHandler(
@@ -195,7 +322,46 @@ server <- function(input, output) {
   output$missing_zips <- renderText({
     paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
   })
+
+  ### Testing file integrity of formatted contributions
+  
+  fileCheckInput <- reactive({
+    testingfile <- read_csv(input$formatted_donorfile$datapath) %>% as_tibble()
+  })
+  
+  output$test_1 <- renderText({
+    paste("<b>List of Candidate's Contributions: </b>", all(duplicated(fileCheckInput()$first_name)))
+  }) 
+  
+  output$test_2 <- renderText({
+    paste("<b>Number of Columns: </b>", ncol(fileCheckInput()))
+  })
+  
+  output$test_3 <- renderText({
+    bad_addresses <- fileCheckInput() %>% 
+      filter((full_address == "" & addr1 == "") | (addr1 != "" & zip == "")) %>% 
+      nrow()
+    if(bad_addresses > nrow(fileCheckInput())/2){
+      paste("<b>Possible Address Issues:ues: </b>")
+    }
+    else{
+      paste("<b>Possible Address Issues: </b> No") 
+    }
+  })
+  
+  output$donorplot <- renderPlot({
+    if(input$plot_type == "Donation Amounts"){
+      hist(fileCheckInput()$donation_amount, main = "Histogram of Donations", xlab = "Amounts", 
+         ylab = "Frequency", col = "#0b0666")}
+    else if(input$plot_type == "State Distribution"){
+      state_freqs <- table(fileCheckInput()$state)
+      barplot(state_freqs, main = "State Frequencies", xlab = "State", 
+           ylab = "Count", col = "#d9a807")}
+  })
+
 }
+
+
 
 # Run the application
 shinyApp(ui = ui, server = server)

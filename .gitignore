@@ -42,4 +42,5 @@ vignettes/*.pdf
 *.csv
 *.tsv
 
+# states folder
 states/

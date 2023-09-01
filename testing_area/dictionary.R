@@ -17,13 +17,14 @@ reticulate::source_python("/Users/jacksonrudoff/donoRs/testing_area/src/virginia
 ### Grab folders
 
 path <- getwd()
-dirs <- list.dirs(test_data_path, full.names = F)
+dirs <- list.dirs(path, full.names = F)
 dirs <- dirs[-1]
 state_list <- list()
 
 for (state in dirs){
   
-  state_dir <- glue("{test_data_path}/{state}")
+
+  state_dir <- glue("{path}/{state}")
   input_path <- list.files(state_dir, full.names = T)[1]
   
   if (state == "VA") {
@@ -69,6 +70,7 @@ for (state in dirs){
     tmp_enc <- 'excel'
   } else{
   tmp_enc <- readr::guess_encoding(input_path)
+  tmp_enc <- guess_encoding(input_path)
   tmp_enc <- tmp_enc$encoding[1]
   }
   state_list[[paste(input_ext, tmp_enc, tmp_cols)]] <- state
