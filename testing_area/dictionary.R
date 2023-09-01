@@ -23,6 +23,7 @@ state_list <- list()
 
 for (state in dirs){
   
+
   state_dir <- glue("{path}/{state}")
   input_path <- list.files(state_dir, full.names = T)[1]
   
@@ -68,6 +69,7 @@ for (state in dirs){
   if(input_ext == "xlsx"){
     tmp_enc <- 'excel'
   } else{
+  tmp_enc <- readr::guess_encoding(input_path)
   tmp_enc <- guess_encoding(input_path)
   tmp_enc <- tmp_enc$encoding[1]
   }
