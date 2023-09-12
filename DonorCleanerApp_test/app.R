@@ -14,6 +14,8 @@ library(reticulate)
 library(XML)
 library(shinycssloaders)
 library(tools)
+source("src/new_transforms.R")
+
 
 ### options
 
@@ -105,14 +107,15 @@ ui <- navbarPage(
           ".csv",
           ".xml",
           ".html",
-          ".xlsx"
+          ".xlsx",
+          ".xls"
         )
       ),
-      htmlOutput("donorsize"),
-      htmlOutput("usabledonors"),
-      htmlOutput("avg_donors"),
-      htmlOutput("locations"),
-      htmlOutput("missing_zips"),
+      # htmlOutput("donorsize"),
+      # htmlOutput("usabledonors"),
+      # htmlOutput("avg_donors"),
+      # htmlOutput("locations"),
+      # htmlOutput("missing_zips"),
       # Horizontal line ----
       tags$hr(),
 
@@ -137,36 +140,7 @@ ui <- navbarPage(
 tabPanel("State Website Links",
          dataTableOutput("statelinks")
     ),
-
-tabPanel("File Checker",
-      
-  sidebarLayout(
-           
-           # Sidebar panel for inputs ----
-    sidebarPanel(
-      
-         fileInput("formatted_donorfile", "Select a formatted donor .csv.",
-                   multiple = TRUE,
-                   accept = c(
-                     "text/csv",
-                     "text/comma-separated-values,text/plain",
-                     ".csv")
-         ),
-         htmlOutput("test_1"),
-         htmlOutput("test_2"),
-         htmlOutput("test_3"),
-         tags$hr(),
-         selectInput("plot_type", "Select Plot Type:",
-                     choices = c("Donation Amounts", "State Distribution"),
-                     selected = "Donation Amounts")
-         
-    ),
-    mainPanel(
-      plotOutput("donorplot")
-    ),
   )
-  )
-)
 
 server <- function(input, output) {
   
@@ -177,13 +151,6 @@ server <- function(input, output) {
       select(State, Comments)
     datatable(formattedlinks, escape = FALSE, options = list(dom = 't', pageLength = '50'), rownames = FALSE)
   })
-  
-  # load source code and dict
-  
-  source("src/auto_transforms.R")
-  source("src/get_result.R")
-  source("src/detect_delim.R")
-  source("src/donor_reads.R")
   
   output_file_name <- reactive({
     file_name <- input$donorfile$name
@@ -196,7 +163,7 @@ server <- function(input, output) {
     #if (input$state == "PHIL") {
       #donors_df <- donor_cleaner(input$philly_can, state_fin())
     #} else {
-      donors_df <- donor_cleaner(input$donorfile$datapath)
+      donor_cleaner(input$donorfile$datapath)
     #}
     #if(input$filter_state){
       #donors_df %>% filter(state == state_fin())
@@ -228,64 +195,35 @@ server <- function(input, output) {
     }
   )
 
-  output$donorsize <- renderText({
-    paste("<b>Number of Donors: </b>", nrow(datasetInput()))
-  })
+  # output$donorsize <- renderText({
+  #   paste("<b>Number of Donors: </b>", nrow(datasetInput()))
+  # })
+  # 
+  # output$avg_donors <- renderText({
+  #   paste("<b>Average Donation Amount: </b>", round(mean(datasetInput()$donation_amount), 3))
+  # })
+  # 
+  # output$locations <- renderText({
+  #   paste("<b>Most Frequent State: </b>", datasetInput() %>% 
+  #           count(state) %>% slice_max(n = 1, order_by = n) %>% pull(state))
+  # })
+  # 
+  # output$missing_zips <- renderText({
+  #   paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
+  # })
 
-  output$usabledonors <- renderText({
-    abba_rows <- sum(datasetInput()$full_name != "" | datasetInput()$first_name != "" & datasetInput()$last_name != "")
-    paste("<b>ABBA-Friendly Donors: </b>", abba_rows)
-  })
-  output$avg_donors <- renderText({
-    paste("<b>Average Donation Amount: </b>", round(mean(datasetInput()$donation_amount), 3))
-  })
-
-  output$locations <- renderText({
-    paste("<b>Most Frequent State: </b>", datasetInput() %>% 
-            count(state) %>% slice_max(n = 1, order_by = n) %>% pull(state))
-  })
-
-  output$missing_zips <- renderText({
-    paste("<b>Missing Zips: </b>", datasetInput() %>% pull(zip) %>% anyNA())
-  })
-
-  ### Testing file integrity of formatted contributions
   
-  fileCheckInput <- reactive({
-    testingfile <- read_csv(input$formatted_donorfile$datapath) %>% as_tibble()
-  })
-  
-  output$test_1 <- renderText({
-    paste("<b>List of Candidate's Contributions: </b>", all(duplicated(fileCheckInput()$first_name)))
-  }) 
-  
-  output$test_2 <- renderText({
-    paste("<b>Number of Columns: </b>", ncol(fileCheckInput()))
-  })
-  
-  output$test_3 <- renderText({
-    bad_addresses <- fileCheckInput() %>% 
-      filter((full_address == "" & addr1 == "") | (addr1 != "" & zip == "")) %>% 
-      nrow()
-    if(bad_addresses > nrow(fileCheckInput())/2){
-      paste("<b>Possible Address Issues:ues: </b>")
-    }
-    else{
-      paste("<b>Possible Address Issues: </b> No") 
-    }
-  })
-  
-  output$donorplot <- renderPlot({
-    if(input$plot_type == "Donation Amounts"){
-      hist(fileCheckInput()$donation_amount, main = "Histogram of Donations", xlab = "Amounts", 
-         ylab = "Frequency", col = "#0b0666")}
-    else if(input$plot_type == "State Distribution"){
-      state_freqs <- table(fileCheckInput()$state)
-      barplot(state_freqs, main = "State Frequencies", xlab = "State", 
-           ylab = "Count", col = "#d9a807")}
-  })
-
-}
+#   output$donorplot <- renderPlot({
+#     if(input$plot_type == "Donation Amounts"){
+#       hist(fileCheckInput()$donation_amount, main = "Histogram of Donations", xlab = "Amounts", 
+#          ylab = "Frequency", col = "#0b0666")}
+#     else if(input$plot_type == "State Distribution"){
+#       state_freqs <- table(fileCheckInput()$state)
+#       barplot(state_freqs, main = "State Frequencies", xlab = "State", 
+#            ylab = "Count", col = "#d9a807")}
+#   })
+# 
+ }
 
 
 

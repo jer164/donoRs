@@ -639,7 +639,6 @@ donor_cleaner <- function(input_data_path) {
       "first_name" = "contributor_first_name",
       "last_name" = "contributor_last_name",
       "middle_name" = "contributor_middle_name",
-      "full_name" = "contributor_non_individual",
       "full_address" = "address",
       "donation_amount" = "amount",
       "donation_date" = "contribution_date"
@@ -737,8 +736,8 @@ donor_cleaner <- function(input_data_path) {
       "addr2" = "ADDRESS2",
       "donation_amount" = "TRAN_AMT",
       "donation_date" = "TRAN_DATE",
-      "state" = "CITY",
-      "city" = "STATE",
+      "state" = "STATE",
+      "city" = "CITY",
       "zip" = "ZIP"
     )
 
@@ -823,18 +822,16 @@ donor_cleaner <- function(input_data_path) {
     temp_data <- temp_data %>% rename(
       "full_name" = "contributor_name",
       "donation_amount" = "amount",
-      "donation_date" = "date",
-      "full_address" = "city_state_zip"
+      "donation_date" = "date"
     )
 
 
     temp_data <- temp_data %>%
-      mutate(city = word(full_address, 1, sep = ",")) %>%
-      mutate(zip = str_extract(full_address, "\\d{5}")) %>%
-      mutate(state = word(full_address, 2, sep = ",")) %>%
+      mutate(city = word(city_state_zip, 1, sep = ",")) %>%
+      mutate(zip = str_extract(city_state_zip, "\\d{5}")) %>%
+      mutate(state = word(city_state_zip, 2, sep = ",")) %>%
       mutate(state = str_extract(state, "[A-Z]{2}")) %>%
-      mutate(full_name = gsub("\\([A-Za-z]+\\)", "", full_name)) %>%
-      mutate(full_address = "NULL")
+      mutate(full_name = gsub("\\([A-Za-z]+\\)", "", full_name))
   }
 
 ######### ABBA transforms

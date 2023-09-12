@@ -16,15 +16,19 @@ reticulate::source_python("/Users/jacksonrudoff/donoRs/testing_area/src/virginia
 
 ### Grab folders
 
-path <- getwd()
-dirs <- list.dirs(path, full.names = F)
+wd_path <- getwd()
+test_data_path <- glue("{wd_path}/states")
+dirs <- list.dirs(test_data_path, full.names = F)
 dirs <- dirs[-1]
+
 state_list <- list()
 
+i = 1
 for (state in dirs){
   
-
-  state_dir <- glue("{path}/{state}")
+  print(glue("Adding state item {i}"))
+  
+  state_dir <- glue("{test_data_path}/{state}")
   input_path <- list.files(state_dir, full.names = T)[1]
   
   if (state == "VA") {
@@ -70,11 +74,18 @@ for (state in dirs){
     tmp_enc <- 'excel'
   } else{
   tmp_enc <- readr::guess_encoding(input_path)
-  tmp_enc <- guess_encoding(input_path)
   tmp_enc <- tmp_enc$encoding[1]
   }
-  state_list[[paste(input_ext, tmp_enc, tmp_cols)]] <- state
+  if(is.na(tmp_enc) == T){
+    tmp_enc <- "none"
+  }
   
+  state_list[[paste(input_ext, tmp_enc, tmp_cols)]] <- state
+  print("{state} added")
+  print(length(state_list))
+  print({i})
+  i = i + 1
+  Sys.sleep(0.1)
 }
 
 #test_path <- "/Users/jacksonrudoff/donoRs/testing_area/states/AL/James_Donors_AL.csv"
@@ -99,6 +110,8 @@ get_result <- function(ext, enc, cols, key_list) {
   }
 }
 
+
+save(state_list, file = "src/state_list.Rdata")
 
 save(state_list, file = "/Users/jacksonrudoff/donoRs/DonorCleanerApp_test/src/state_list.Rdata")
 

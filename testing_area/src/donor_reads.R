@@ -13,6 +13,10 @@ donor_reads <- function(input_path){
     input_enc <- readr::guess_encoding(input_path)
     input_enc <- input_enc$encoding[1]}
   
+  if (is.na(input_enc)){
+    input_enc <- "none"
+  }
+  
   if (input_ext == "xml") {
     tmp_cont <- virginia(input_path) %>% as_tibble()
   } else if (input_ext == "html") {

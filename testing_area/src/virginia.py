@@ -28,5 +28,7 @@ def virginia(input_xml):
     df_2 = pd.read_xml(cleaned, xpath= "//Contributor")
     df_3 = pd.read_xml(cleaned, xpath= "//ScheduleA//LiA//Contributor//Address")
     final_df = pd.concat([df, df_2, df_3], axis="columns")
+    final_df = final_df[final_df['IsIndividual'] == True]
+    final_df.drop(['Address'], axis = 1, inplace=True)
 
     return final_df

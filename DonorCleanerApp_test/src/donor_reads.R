@@ -1,13 +1,20 @@
 donor_reads <- function(input_path){
   
-  load("src/state_list.Rdata")
-
+  library(tools)
+  library(xml2)
+  library(tidyverse)
+  library(readxl)
+  library(rvest)
   input_ext <- file_ext(input_path)
   if(input_ext == "xlsx"){
     input_enc <- 'excel'
   } else{
-    input_enc <- guess_encoding(input_path)
+    input_enc <- readr::guess_encoding(input_path)
     input_enc <- input_enc$encoding[1]}
+  
+  if (is.na(input_enc)){
+    input_enc <- "none"
+  }
   
   if (input_ext == "xml") {
     tmp_cont <- virginia(input_path) %>% as_tibble()
@@ -43,17 +50,18 @@ donor_reads <- function(input_path){
     tmp_cont <- read_delim(input_path,
                            delim = "\t", escape_double = FALSE,
                            trim_ws = TRUE
-    )}
-    else{
+    )} else {
     tmp_cont <- read_delim(input_path,
                              delim = "|", escape_double = FALSE,
                              trim_ws = TRUE)
     }
-  }
+  } 
   
   input_cols <- paste(colnames(tmp_cont), collapse = " ")
   state_fin <- get_result(input_ext, input_enc, input_cols, state_list)
   donor_output <- list(tmp_cont, state_fin)
+  
+
   return(donor_output)
   
 }
