@@ -23,6 +23,7 @@ virtualenv_install("python_environment", packages = c("pandas", "lxml", "bs4", "
 reticulate::use_virtualenv("python_environment", required = TRUE)
 reticulate::source_python("src/virginia.py", convert = TRUE)
 reticulate::source_python("src/philadelphia.py", convert = TRUE)
+reticulate::source_python("src/nevada.py", convert = TRUE)
 
 
 #######################################################
@@ -42,6 +43,8 @@ donor_cleaner <- function(input_data_path, state_fin) {
     temp_data <- virginia(input_data_path) %>% as_tibble()
   } else if (state_fin == "KS") {
     temp_data <- kansas(input_data_path) %>% as_tibble()
+  } else if (state_fin == "NV") {
+    temp_data <- nevada(input_data_path) %>% as_tibble()
   } else if (state_fin == "MO") {
     temp_data <- missouri(input_data_path) %>% as_tibble()
   } else if (state_fin == "PHIL") {

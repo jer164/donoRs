@@ -159,6 +159,7 @@ ui <- navbarPage(
             "New Jersey" = "NJ",
             "New Mexico" = "NM",
             "New York" = "NY",
+            "Nevada" = "NV",
             "North Carolina" = "NC",
             "North Dakota" = "ND",
             "Ohio" = "OH",
