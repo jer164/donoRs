@@ -116,7 +116,7 @@ ui <- navbarPage(
       htmlOutput("missing_zips"),
       # Horizontal line ----
       tags$hr(),
-      selectInput(
+      selectizeInput(
         "state",
         "Source:",
         list(
@@ -127,7 +127,9 @@ ui <- navbarPage(
             "Los Angeles" = "LA_C",
             "New York City" = "NYC",
             "Philadelphia" = "PHIL",
-            "Washington, D.C." = "DC"
+            "Salt Lake City" = "SLC",
+            "Washington, D.C." = "DC",
+            "Wayne County" = "Wayne_Co"
           ),
           `State` = list(
             "Alabama" = "AL",
@@ -153,6 +155,7 @@ ui <- navbarPage(
             "Massachusetts" = "MA",
             "Maryland" = "MD",
             "Michigan" = "MI",
+            "Minnesota" = "MN",
             "Missouri" = "MO",
             "Montana" = "MT",
             "Nebraska" = "NE",
@@ -221,7 +224,8 @@ tabPanel("File Checker",
                    accept = c(
                      "text/csv",
                      "text/comma-separated-values,text/plain",
-                     ".csv")
+                     ".csv",
+                     ".xslx")
          ),
          htmlOutput("test_1"),
          htmlOutput("test_2"),
